@@ -1,6 +1,6 @@
 # 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
-> Global Solution — Turma 1TDSPH (2026)
+> Global Solution — Turma 1TDSPH (2026)  
 > Disciplina: Computational Thinking Using Python  
 > Sistema desenvolvido em Python para simular o gerenciamento de emergências ambientais, monitoramento climático e conectividade via satélites.
 
