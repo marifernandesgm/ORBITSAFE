@@ -2,10 +2,11 @@
 
 > Global Solution — Turma 1TDSPH (2026)
 > Disciplina: Software Engineering and Business Model
+> Projeto focado em conectividade via satélites de órbita baixa  para prevenção, monitoramento e resposta ágil a desastres ambientais.
 
 ---
 
-## 📌 Descrição do Projeto
+## DESCRIÇÃO DO PROJETO
 
 O **OrbitSafe** é uma aplicação inteligente desenvolvida para auxiliar no monitoramento, prevenção e resposta a desastres naturais em regiões remotas ou vulneráveis. A solução utiliza tecnologias espaciais, inteligência artificial e sistemas de comunicação integrados para fornecer informações estratégicas em tempo real, auxiliando equipes de emergência e órgãos responsáveis pela proteção da população.
 
@@ -21,27 +22,27 @@ O sistema contempla as seguintes abordagens estratégicas e de engenharia:
 
 ---
 
-# 🎯 Objetivo
+## OBJETIVO
 
 O OrbitSafe demonstra como os conceitos de Engenharia de Software e Modelagem de Negócios podem ser aplicados para estruturar uma solução economicamente viável e tecnicamente robusta. O objetivo é conectar regiões isoladas e proteger vidas através do gerenciamento eficiente de dados climáticos e comunicação resiliente via satélites de órbita baixa.
 
 ---
 
-# 🚀 Tecnologias Utilizadas
+## TECNOLOGIAS UTILIZADAS
 
 O ecossistema e o planejamento do projeto foram estruturados utilizando ferramentas de engenharia de software, design e metodologias ágeis:
 
-* **Business Model Canvas (BMC)** para modelagem de negócios
-* **Canva** para mapeamento visual estratégico
-* **Notion** para documentação do Backlog do Produto e Histórias de Usuário
-* **10 Heurísticas de Jakob Nielsen** para Engenharia de Usabilidade e IHC
-* **Metodologias Ágeis** aplicadas ao ciclo de desenvolvimento
+* **Business Model Canvas (BMC)** para modelagem de negócios;
+* **Canva** para mapeamento visual estratégico;
+* **Notion** para documentação do Backlog do Produto e Histórias de Usuário;
+* **10 Heurísticas de Jakob Nielsen** para Engenharia de Usabilidade e IHC;
+* **Metodologias Ágeis** aplicadas ao ciclo de desenvolvimento.
 
 ---
 
-# ⚙️ Funcionalidades Desenvolvidas
+## FUNCIONALIDADES DESENVOLVIDAS
 
-### 📋 Conceito da Solução
+### Conceito da Solução
 
 Mapeamento completo do problema global:
 * **O Problema:** Desastres naturais destroem infraestruturas terrestres convencionais de comunicação, isolando comunidades e atrasando resgates.
@@ -50,7 +51,7 @@ Mapeamento completo do problema global:
 
 ---
 
-### 🚨 Inovação e Viabilidade
+### Inovação e Viabilidade
 
 Estruturação do potencial mercadológico da solução:
 * **Tipos de Inovação:** Inovação de Serviço Digital, Inovação de Processo e Inovação Incremental Estratégica.
@@ -58,7 +59,7 @@ Estruturação do potencial mercadológico da solução:
 
 ---
 
-### 🌦 Business Model Canvas
+### Business Model Canvas
 
 Modelagem de negócios dinâmica estruturando os pilares da startup:
 * Parceiros-Chave, Atividades-Chave e Recursos-Chave.
@@ -67,7 +68,7 @@ Modelagem de negócios dinâmica estruturando os pilares da startup:
 
 ---
 
-### 📡 Protótipo de Telas e Avaliação Heurística
+### Protótipo de Telas e Avaliação Heurística
 
 Avaliação profunda de IHC (Interação Humano-Computador) nas interfaces desenvolvidas:
 * **Página Home:** Design minimalista direcionado para o monitoramento.
@@ -78,7 +79,7 @@ Avaliação profunda de IHC (Interação Humano-Computador) nas interfaces desen
 
 ---
 
-### 🔥 Backlog do Produto
+### Backlog do Produto
 
 Gerenciamento ágil de escopo contendo:
 * Mapeamento de requisitos de software.
@@ -87,7 +88,7 @@ Gerenciamento ágil de escopo contendo:
 
 ---
 
-# 📁 Estrutura do Projeto
+## ESTRUTURA DO PROJETO
 
 <pre>
 ORBITSAFE_BUSINESS/
@@ -96,3 +97,22 @@ ORBITSAFE_BUSINESS/
 └── README.md                                                     # Documentação oficial
 </pre>
 
+## Integrantes & Autores
+
+Abaixo encontram-se os detalhes dos desenvolvedores responsáveis pela arquitetura e engenharia do OrbitSafe:
+
+* Isabelle Ferreira Neri Feitoza — RM 573507 (DESENVOLVEDORA FRONT-END) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/isabelle-ferreira-8844593ab/) | [GitHub](https://github.com/isabelleferreiraa)
+* Milena Silva Conegin — RM 568923 (DESENVOLVEDORA BACK-END) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/milena-conegin-996b22269?utm_source=share_via&utm_content=profile&utm_medium=member_ios) | [GitHub](https://github.com/MilenaConegin)
+* Marina Fernandes Gomes Mesquita — RM 571265 (DESENVOLVEDORA FRONT-END) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/marifernandesgm-58460a40a) | [GitHub](https://github.com/marifernandesgm)
+ 
+## CONTATO
+
+Para dúvidas, suporte técnico ou informações sobre o ecossistema OrbitSafe, entre em contato com a equipe de desenvolvimento através dos canais abaixo:
+
+* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/isabelleferreiraa/ORBITSAFE-Global-Solution.git)
+
+---
+OrbitSafe 2026 — Fiap Global Solution. Todos os direitos reservados.
