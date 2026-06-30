@@ -5,7 +5,7 @@ DISCIPLINA: Artificial Intelligence & Chatbot
 
 TURMA: 1TDSPH (2026)
 
-# INTEGRANTES DO PROJETO:
+## INTEGRANTES DO PROJETO:
 
 - Andre Luiz Ramos Forastieri - RM:572203
 - Eduardo Damasio Guelere - RM:569960
@@ -15,7 +15,7 @@ TURMA: 1TDSPH (2026)
 
 ------------------------------------------------------------
 
-# CREDENCIAIS DOS SERVIÇOS UTILIZADOS:
+## CREDENCIAIS DOS SERVIÇOS UTILIZADOS:
 
 1. TELEGRAM BOT:
    - Username do Bot: @orbitsafe_bot
@@ -23,7 +23,7 @@ TURMA: 1TDSPH (2026)
 
 ------------------------------------------------------------
 
-# PROPOSTA DE SOLUÇÃO:
+## PROPOSTA DE SOLUÇÃO:
 
 O crescimento dos desastres naturais nos últimos anos trouxe grandes desafios para regiões vulneráveis e remotas. Enchentes, queimadas, tempestades e deslizamentos frequentemente causam falhas de conectividade, dificultando a comunicação entre a população e equipes de emergência.
 
@@ -49,7 +49,7 @@ Para ter acesso completo do nosso bot via webchat, basta entrar no site feito po
 
 ------------------------------------------------------------
 
-# INTEGRAÇÕES:
+## INTEGRAÇÕES:
 
   *IBM Watson Assistant: Responsável pelo processamento da conversa.
 
@@ -63,7 +63,7 @@ Para ter acesso completo do nosso bot via webchat, basta entrar no site feito po
 
 ------------------------------------------------------------
 
-# FLUXO CONVERSACIONAL
+## FLUXO CONVERSACIONAL
 
 <pre>
 	Usuário → Saudação
@@ -78,3 +78,7 @@ Alertas  Clima   Desastres  Ajuda
           ↓
        Voltar Menu
 </pre>
+
+## 🔗 Repositório Live Server
+ 
+👉 **GitHub - OrbitSafe Repo(https://github.com/isabelleferreiraa/ORBITSAFE-Global-Solution)**
