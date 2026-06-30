@@ -122,7 +122,7 @@ Apresenta um resumo contendo:
 
 ---
 
-# Estrutura do Projeto
+## ESTRUTURA DO PROJETO
 
 <pre>
 ORBITSAFE_PYTHON/
