@@ -1,8 +1,8 @@
-# 🛰️ OrbitSafe — Sistema Inteligente de Monitoramento e Emergências Climáticas
+# 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
-> Global Solution — Turma 1TDSPH (2026)
-> Disciplina: Software Engineering and Business Model
-> Projeto focado em conectividade via satélites de órbita baixa  para prevenção, monitoramento e resposta ágil a desastres ambientais.
+> Global Solution — Turma 1TDSPH (2026)  
+> Disciplina: Software Engineering and Business Model  
+> Projeto focado em conectividade via satélites de órbita baixa  para prevenção, monitoramento e resposta ágil a desastres ambientais.  
 
 ---
 
@@ -24,7 +24,7 @@ O sistema contempla as seguintes abordagens estratégicas e de engenharia:
 
 ## OBJETIVO
 
-O OrbitSafe demonstra como os conceitos de Engenharia de Software e Modelagem de Negócios podem ser aplicados para estruturar uma solução economicamente viável e tecnicamente robusta. O objetivo é conectar regiões isoladas e proteger vidas através do gerenciamento eficiente de dados climáticos e comunicação resiliente via satélites de órbita baixa.
+O OrbitSafe demonstra como os conceitos de **Engenharia de Software e Modelagem de Negócios** podem ser aplicados para estruturar uma solução economicamente viável e tecnicamente robusta. O objetivo é conectar regiões isoladas e proteger vidas através do gerenciamento eficiente de dados climáticos e comunicação resiliente via satélites de órbita baixa.
 
 ---
 
