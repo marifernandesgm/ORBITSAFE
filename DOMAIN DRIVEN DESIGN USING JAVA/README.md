@@ -1,10 +1,12 @@
-# ☕ OrbitSafe — Sistema Inteligente de Monitoramento e Emergências Climáticas
+# 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
-> **Global Solution — Turma 1TDSPH (2026)** > Sistema desenvolvido em **Java** para a disciplina de **Domain Driven Design Using Java**, aplicando conceitos de orientação a objetos, modelagem de domínio e desenvolvimento de interfaces gráficas para simular o gerenciamento de emergências ambientais e monitoramento climático.
+> Global Solution — Turma 1TDSPH (2026)  
+> Disciplina: Domain Driven Design Using Java
+> > Sistema desenvolvido em **Java** para, aplicar conceitos de orientação a objetos, modelagem de domínio e desenvolvimento de interfaces gráficas para simular o gerenciamento de emergências ambientais e monitoramento climático.
 
 ---
 
-## 📌 Descrição do Projeto
+## DESCRIÇÃO DO PROJETO
 
 O **OrbitSafe** é uma aplicação desenvolvida em **Java** com o objetivo de simular um sistema inteligente para monitoramento de desastres naturais e gerenciamento de situações de emergência através de uma interface gráfica (GUI).
 
@@ -12,13 +14,13 @@ O projeto foi construído utilizando os princípios da **Programação Orientada
 
 ---
 
-## 🎯 Objetivo
+## OBJETIVO
 
 O OrbitSafe demonstra como os conceitos de **Domain Driven Design (DDD)** e da **Programação Orientada a Objetos** podem ser aplicados na construção de sistemas robustos, utilizando Java para representar o domínio do problema por meio de entidades (`beans`), interfaces e uma camada visual interativa para o utilizador.
 
 ---
 
-## 🚀 Tecnologias e Recursos Utilizados
+## TECNOLOGIAS UTILIZADAS
 
 O sistema foi desenvolvido utilizando os seguintes recursos da linguagem Java:
 
@@ -31,21 +33,21 @@ O sistema foi desenvolvido utilizando os seguintes recursos da linguagem Java:
 
 ---
 
-## ⚙️ Funcionalidades Implementadas
+## FUNCIONALIDADES DESENVOLVIDAS
 
-* **👤 Cadastro de Usuários:** Gestão dos dados dos utilizadores responsáveis pelo sistema (Nome, CPF, Telefone, E-mail e Endereço).
-* **📱 Gerenciamento de Dispositivos:** Registo dos dispositivos de comunicação utilizados nas emergências (Tipo, Status, Nível de bateria e Localização).
-* **🚨 Registro de Emergências e Ocorrências:** Permite registar e acompanhar ocorrências ambientais, categorizando-as por gravidade, localização, data/horário e descrição detalhada.
-* **📡 Monitoramento de Satélites:** Controlo dos satélites responsáveis pela comunicação e monitoramento de regiões remotas.
-* **🏢 Central de Controle e Operadores:** Coordenação das operações de socorro através de centrais que gerem operadores e o fluxo de atendimento.
+* **Cadastro de Usuários:** Gestão dos dados dos utilizadores responsáveis pelo sistema (Nome, CPF, Telefone, E-mail e Endereço).
+* **Gerenciamento de Dispositivos:** Registo dos dispositivos de comunicação utilizados nas emergências (Tipo, Status, Nível de bateria e Localização).
+* **Registro de Emergências e Ocorrências:** Permite registar e acompanhar ocorrências ambientais, categorizando-as por gravidade, localização, data/horário e descrição detalhada.
+* **Monitoramento de Satélites:** Controlo dos satélites responsáveis pela comunicação e monitoramento de regiões remotas.
+* **Central de Controle e Operadores:** Coordenação das operações de socorro através de centrais que gerem operadores e o fluxo de atendimento.
 
 ---
 
-## 📁 Estrutura do Projeto
+## ESTRUTURA DO PROJETO
 
 De acordo com o ambiente de desenvolvimento, o projeto está estruturado da seguinte forma:
 
-```text
+<pre>
 ORBITSAFE/
 │
 ├── src/
@@ -69,11 +71,11 @@ ORBITSAFE/
 ├── OrbitSafe.iml
 └── README.md
 
-```
+</pre>
 
 ---
 
-## 🏗️ Arquitetura do Projeto
+## ARQUITETURA DA PASTA
 
 O sistema divide-se claramente em duas grandes frentes de responsabilidade dentro do pacote fundamental `br.com.fiap`:
 
@@ -82,14 +84,14 @@ O sistema divide-se claramente em duas grandes frentes de responsabilidade dentr
 
 ---
 
-## ▶️ Como Executar
+## COMO EXECUTAR
 
 ### Pré-requisitos
 
 * Java JDK 21 ou superior instalado.
 * IDE **IntelliJ IDEA** (ou outra da sua preferência).
 
-### Passo a Passo
+### Passo a Passo:
 
 1. **Clonar o repositório:**
 ```bash
@@ -110,26 +112,26 @@ git clone [https://github.com/marifernandesgm/ORBITSAFE.git](https://github.com/
 
 ---
 
-## 👥 Integrantes
+## INTEGRANTES & AUTORES
 
-* **Andre Luiz Ramos Forastieri** — RM 572203
-* **Eduardo Damasio Guelere** — RM 569960
-* **Isabelle Ferreira Neri Feitoza** — RM 573507
-* **Marina Fernandes Gomes Mesquita** — RM 571265
-* **Milena Silva Conegin** — RM 568923
-* **Turma:** 1TDSPH
-* **FIAP — Global Solution 2026**
+Abaixo encontram-se os detalhes dos desenvolvedores responsáveis pela arquitetura e engenharia do OrbitSafe:
 
----
-
-## 📞 Contato
-
-Em caso de dúvidas sobre o projeto, entre em contacto com a equipa de desenvolvimento através do repositório oficial do OrbitSafe.
+* Isabelle Ferreira Neri Feitoza — RM 573507 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/isabelle-ferreira-8844593ab/) | [GitHub](https://github.com/isabelleferreiraa)
+* Milena Silva Conegin — RM 568923 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/milena-conegin-996b22269?utm_source=share_via&utm_content=profile&utm_medium=member_ios) | [GitHub](https://github.com/MilenaConegin)
+* Marina Fernandes Gomes Mesquita — RM 571265 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/marifernandesgm-58460a40a) | [GitHub](https://github.com/marifernandesgm)
 
 ---
 
-**OrbitSafe 2026 — FIAP Global Solution. Todos os direitos reservados.**
+## CONTATO
 
-```
+Para dúvidas, suporte técnico ou informações sobre o ecossistema OrbitSafe, entre em contato com a equipe de desenvolvimento através dos canais abaixo:
+
+* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/isabelleferreiraa/ORBITSAFE-Global-Solution.git)
+
+---
+OrbitSafe 2026 — Fiap Global Solution. Todos os direitos reservados.
 
 ```
