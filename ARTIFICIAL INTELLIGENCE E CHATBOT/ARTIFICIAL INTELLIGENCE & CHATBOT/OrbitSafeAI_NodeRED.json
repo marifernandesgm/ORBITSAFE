@@ -1,0 +1,377 @@
+[
+    {
+        "id": "4512cc011878d22c",
+        "type": "tab",
+        "label": "Fluxo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a9930d06fdd0a641",
+        "type": "telegram bot",
+        "botname": "OrbitSafe AI",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": 300,
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": 6667,
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": 8443,
+        "publicbotport": 8443,
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "b7a5dde6de7b8f25",
+        "type": "function",
+        "z": "4512cc011878d22c",
+        "name": "procIN Text & Option",
+        "func": "msg.params = {\n    \"session_id\": 123\n};\nmsg.chatId = msg.payload.chatId;\nmsg.payload = msg.payload.content;\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "e545f651ca764ec6"
+            ]
+        ]
+    },
+    {
+        "id": "13a58bec961db6ba",
+        "type": "function",
+        "z": "4512cc011878d22c",
+        "name": "procOut Text and Opt",
+        "func": "const generic = msg.payload.output.generic || [];\nlet buttons = [];\nlet textParts = [];\n\ngeneric.forEach(item => {\n    if (item.response_type === \"text\" && item.text) {\n        textParts.push(item.text);\n    }\n\n    if (item.response_type === \"option\" && item.options) {\n        if (item.title) {\n            textParts.push(item.title);\n        }\n\n        buttons = item.options.map(opt => [{\n            text: opt.label,\n            callback_data: (opt.value && opt.value.input && opt.value.input.text)\n                ? opt.value.input.text\n                : opt.label\n        }]);\n    }\n});\n\nmsg.payload = {\n    chatId: msg.chatId,\n    type: \"message\",\n    content: textParts.join(\"\\n\") || msg.payload.content,\n    options: {}\n};\n\nif (buttons.length > 0) {\n    msg.payload.options.reply_markup = JSON.stringify({\n        inline_keyboard: buttons\n    });\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 480,
+        "wires": [
+            [
+                "ed2546a374ca9445",
+                "bf8f09df806b1320"
+            ]
+        ]
+    },
+    {
+        "id": "c1a977fe2dde4d18",
+        "type": "comment",
+        "z": "4512cc011878d22c",
+        "name": "Utilizar antes do Watson Assistant",
+        "info": "",
+        "x": 660,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "0bc9e5d7207d01bb",
+        "type": "comment",
+        "z": "4512cc011878d22c",
+        "name": "Utilizar depois do Watson Assistant",
+        "info": "",
+        "x": 1180,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "cdf29b5f4ae7c558",
+        "type": "watson-speech-to-text",
+        "z": "4512cc011878d22c",
+        "name": "",
+        "alternatives": 1,
+        "speakerlabels": true,
+        "smartformatting": false,
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "custom-weight": "0.5",
+        "band": "BroadbandModel",
+        "bandhidden": "",
+        "keywords": "",
+        "keywords-threshold": "0.5",
+        "word-confidence": false,
+        "password": "",
+        "apikey": "QGPHAup5rAxOtFdSoRJUdOG6tK8bjEk7d_qm2d5akgnR",
+        "payload-response": true,
+        "streaming-mode": false,
+        "streaming-mute": true,
+        "auto-connect": false,
+        "discard-listening": false,
+        "disable-precheck": false,
+        "service-endpoint": "https://api.us-south.speech-to-text.watson.cloud.ibm.com/instances/9ee3fee6-bbd6-462b-aa8b-73cf23ab7414",
+        "x": 860,
+        "y": 260,
+        "wires": [
+            [
+                "e545f651ca764ec6"
+            ]
+        ]
+    },
+    {
+        "id": "a5c6522c3b733fd3",
+        "type": "function",
+        "z": "4512cc011878d22c",
+        "name": "procIN Voice",
+        "func": "msg.params = {\n    \"session_id\": 123\n};\nmsg.chatId = msg.payload.chatId;\nmsg.payload = msg.payload.weblink;\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 300,
+        "wires": [
+            [
+                "cdf29b5f4ae7c558"
+            ]
+        ]
+    },
+    {
+        "id": "dc7def0c3a7d2571",
+        "type": "switch",
+        "z": "4512cc011878d22c",
+        "name": "",
+        "property": "payload.type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "voice",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "message",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "a5c6522c3b733fd3"
+            ],
+            [
+                "b7a5dde6de7b8f25"
+            ]
+        ]
+    },
+    {
+        "id": "964525503df2f673",
+        "type": "debug",
+        "z": "4512cc011878d22c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1720,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e545f651ca764ec6",
+        "type": "watson-assistant-v2",
+        "z": "4512cc011878d22c",
+        "name": "OrbitSafe AI",
+        "service-endpoint": "",
+        "assistant_id": "5867e43b-538e-4d89-adda-401cf698a8aa",
+        "debug": false,
+        "restart": false,
+        "return_context": true,
+        "alternate_intents": false,
+        "multisession": true,
+        "timeout": "",
+        "optout-learning": false,
+        "persist-session-id": false,
+        "x": 890,
+        "y": 480,
+        "wires": [
+            [
+                "13a58bec961db6ba"
+            ]
+        ]
+    },
+    {
+        "id": "1ed33d0650fcd5fd",
+        "type": "watson-text-to-speech",
+        "z": "4512cc011878d22c",
+        "name": "",
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "voice": "pt-BR_CamilaNatural",
+        "voicehidden": "pt-BR_CamilaNatural",
+        "format": "audio/wav",
+        "password": "",
+        "apikey": "upKuf9JHdTUoErFZQLjX-vlO0pFi5r2CzYnnjhrdO2ub",
+        "payload-response": true,
+        "service-endpoint": "https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/7f32b1c4-0d23-4b65-8b9e-3f7823416e12",
+        "x": 1300,
+        "y": 300,
+        "wires": [
+            [
+                "f3a39d2c1065c646"
+            ]
+        ]
+    },
+    {
+        "id": "ed2546a374ca9445",
+        "type": "function",
+        "z": "4512cc011878d22c",
+        "name": "procIN TTS",
+        "func": "msg.text = msg.payload.content;\nmsg.chatId = msg.payload.chatId; \n\nmsg.payload = msg.payload.content;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 380,
+        "wires": [
+            [
+                "1ed33d0650fcd5fd",
+                "1e0e791df15da0c3"
+            ]
+        ]
+    },
+    {
+        "id": "1e0e791df15da0c3",
+        "type": "debug",
+        "z": "4512cc011878d22c",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f3a39d2c1065c646",
+        "type": "function",
+        "z": "4512cc011878d22c",
+        "name": "procOut TTS",
+        "func": "msg.payload = {\n    chatId: msg.chatId,      \n    type: \"voice\",           \n    content: msg.payload    \n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 380,
+        "wires": [
+            [
+                "964525503df2f673",
+                "bf8f09df806b1320"
+            ]
+        ]
+    },
+    {
+        "id": "9047f56717388934",
+        "type": "comment",
+        "z": "4512cc011878d22c",
+        "name": "Integrantes",
+        "info": "- Andre Luiz Ramos Forastieri - RM: 572203\n- Eduardo Damasio Guelere  RM:569960\n- Isabelle Ferreira Neri Feitoza  RM:573507\n- Marina Fernandes Gomes Mesquita  RM:571265\n- Milena Silva Conegin  RM: 568923",
+        "x": 240,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6c10eb00c66f9012",
+        "type": "telegram receiver",
+        "z": "4512cc011878d22c",
+        "name": "",
+        "bot": "a9930d06fdd0a641",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "hasinput": false,
+        "inputs": 0,
+        "handleallupdates": false,
+        "handleprocessupdates": false,
+        "x": 210,
+        "y": 360,
+        "wires": [
+            [
+                "dc7def0c3a7d2571"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "bf8f09df806b1320",
+        "type": "telegram sender",
+        "z": "4512cc011878d22c",
+        "name": "",
+        "bot": "a9930d06fdd0a641",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1530,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecf40b4e5658abcb",
+        "type": "telegram event",
+        "z": "4512cc011878d22c",
+        "name": "",
+        "bot": "a9930d06fdd0a641",
+        "event": "callback_query",
+        "autoanswer": false,
+        "x": 360,
+        "y": 540,
+        "wires": [
+            [
+                "b7a5dde6de7b8f25"
+            ]
+        ]
+    },
+    {
+        "id": "20d00bcb5fcd8b78",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-telegrambot": "17.4.1",
+            "node-red-node-watson": "0.10.3"
+        }
+    }
+]

@@ -1,0 +1,2187 @@
+{
+  "intents": [
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "Agradeço pela ajuda!"
+        },
+        {
+          "text": "Ajudou muito"
+        },
+        {
+          "text": "Muito obrigada"
+        },
+        {
+          "text": "Muito obrigado"
+        },
+        {
+          "text": "Não, obrigada"
+        },
+        {
+          "text": "Não, obrigado"
+        },
+        {
+          "text": "Obrigada"
+        },
+        {
+          "text": "Obrigado"
+        },
+        {
+          "text": "Obrigado chat"
+        },
+        {
+          "text": "Obrigado por me ajudar!"
+        },
+        {
+          "text": "Valeu Orbit!"
+        },
+        {
+          "text": "Valeu pela a ajuda"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "alertas",
+      "examples": [
+        {
+          "text": "Consultar alertas"
+        },
+        {
+          "text": "Consultar riscos"
+        },
+        {
+          "text": "Existe algum alerta?"
+        },
+        {
+          "text": "Existem ocorrências?"
+        },
+        {
+          "text": "Há avisos ativos?"
+        },
+        {
+          "text": "Há emergências?"
+        },
+        {
+          "text": "Mostrar alertas"
+        },
+        {
+          "text": "Mostrar riscos"
+        },
+        {
+          "text": "Quais alertas existem?"
+        },
+        {
+          "text": "Quais riscos existem?"
+        },
+        {
+          "text": "Tem alguma emergência?"
+        },
+        {
+          "text": "Verificar alertas"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "região",
+      "examples": [
+        {
+          "text": "Como está a situação local?"
+        },
+        {
+          "text": "Como está meu estado?"
+        },
+        {
+          "text": "Como está minha cidade?"
+        },
+        {
+          "text": "Consultar cidade"
+        },
+        {
+          "text": "Consultar localização"
+        },
+        {
+          "text": "Existe perigo na minha região?"
+        },
+        {
+          "text": "Existe perigo na região?"
+        },
+        {
+          "text": "Há emergências aqui?"
+        },
+        {
+          "text": "Mostrar cidades"
+        },
+        {
+          "text": "Verificar estado"
+        },
+        {
+          "text": "Verificar município"
+        },
+        {
+          "text": "Verificar região"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "riscos",
+      "examples": [
+        {
+          "text": "Como está a previsão?"
+        },
+        {
+          "text": "Como está o clima?"
+        },
+        {
+          "text": "Consultar riscos ambientais"
+        },
+        {
+          "text": "Existe algum perigo?"
+        },
+        {
+          "text": "Existe algum risco?"
+        },
+        {
+          "text": "Existe risco ambiental?"
+        },
+        {
+          "text": "Existe risco de enchente?"
+        },
+        {
+          "text": "Existe risco na região?"
+        },
+        {
+          "text": "Há emergência climática?"
+        },
+        {
+          "text": "Tem alerta para hoje?"
+        },
+        {
+          "text": "Tem previsão de tempestade?"
+        },
+        {
+          "text": "Vai chover?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudação",
+      "examples": [
+        {
+          "text": "Eaí"
+        },
+        {
+          "text": "Estou com uma dúvida"
+        },
+        {
+          "text": "Iniciar"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Oi, boa noite!"
+        },
+        {
+          "text": "Oi, boa tarde!"
+        },
+        {
+          "text": "Oi, bom dia!"
+        },
+        {
+          "text": "Oi bot"
+        },
+        {
+          "text": "Oi chat"
+        },
+        {
+          "text": "Oi OrbitSafe AI"
+        },
+        {
+          "text": "Oi, tudo bem?"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Pode me ajudar?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sistema",
+      "examples": [
+        {
+          "text": "Como funciona a OrbitSafe AI?"
+        },
+        {
+          "text": "Como o sistema funciona?"
+        },
+        {
+          "text": "Como recebo alertas?"
+        },
+        {
+          "text": "Como vocês monitoram os riscos?"
+        },
+        {
+          "text": "O que é a OrbitSafe?"
+        },
+        {
+          "text": "O que você faz?"
+        },
+        {
+          "text": "Qual o objetivo do sistema?"
+        },
+        {
+          "text": "Qual sua função?"
+        },
+        {
+          "text": "Quem desenvolveu?"
+        },
+        {
+          "text": "Quem é você?"
+        },
+        {
+          "text": "Sobre nós"
+        },
+        {
+          "text": "Vocês usam satélites?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "solicitar_ajuda",
+      "examples": [
+        {
+          "text": "Ajuda"
+        },
+        {
+          "text": "Como peço socorro?"
+        },
+        {
+          "text": "Estou em perigo"
+        },
+        {
+          "text": "Estou em uma emergência"
+        },
+        {
+          "text": "Estou isolado"
+        },
+        {
+          "text": "Há uma emergência"
+        },
+        {
+          "text": "Minha região está em risco"
+        },
+        {
+          "text": "Preciso de ajuda"
+        },
+        {
+          "text": "Preciso de atendimento"
+        },
+        {
+          "text": "Preciso de socorro"
+        },
+        {
+          "text": "Quero ajuda"
+        },
+        {
+          "text": "Quero solicitar socorro"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "clima",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "chuva",
+          "synonyms": [
+            "frio",
+            "meteorologia",
+            "previsão",
+            "tempo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "clima",
+          "synonyms": [
+            "Clima",
+            "Climas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sol",
+          "synonyms": [
+            "calor",
+            "Sol"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "temperatura",
+          "synonyms": [
+            "meteorologia ",
+            "previsão",
+            "tempo "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "umidade",
+          "synonyms": [
+            "meteorologia",
+            "previsão",
+            "tempo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "desastre",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "desastre",
+          "synonyms": [
+            "Desastre",
+            "desastres"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "deslizamento",
+          "synonyms": [
+            "Deslizamento",
+            "deslizamentos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "enchente",
+          "synonyms": [
+            "Enchente",
+            "enchentes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "incêndio",
+          "synonyms": [
+            "incendio",
+            "Incêndio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tempestade",
+          "synonyms": [
+            "Tempestade",
+            "tempetades"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vento",
+          "synonyms": [
+            "Vento",
+            "ventos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "estado",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Acre",
+          "synonyms": [
+            "AC",
+            "acre"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Alagoas",
+          "synonyms": [
+            "AL",
+            "alagoas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Amapá",
+          "synonyms": [
+            "amapá",
+            "AP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Amazonas",
+          "synonyms": [
+            "AM",
+            "amazonas "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bahia",
+          "synonyms": [
+            "BA",
+            "bahia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ceará",
+          "synonyms": [
+            "CE",
+            "ceará"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Distrito Federal",
+          "synonyms": [
+            "DF",
+            "distrito federal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Espírito Santo",
+          "synonyms": [
+            "ES",
+            "espírito santo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Goiás",
+          "synonyms": [
+            "GO",
+            "goiás"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Maranhão",
+          "synonyms": [
+            "MA",
+            "maranhão"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mato Grosso",
+          "synonyms": [
+            "mato grosso",
+            "MT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mato Grosso do Sul",
+          "synonyms": [
+            "mato grosso do sul",
+            "MS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Minas Gerais",
+          "synonyms": [
+            "MG",
+            "minas gerais"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pará",
+          "synonyms": [
+            "PA",
+            "pará"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paraíba",
+          "synonyms": [
+            "paraíba",
+            "PB"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Paraná",
+          "synonyms": [
+            "paraná",
+            "PR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pernambuco",
+          "synonyms": [
+            "PE",
+            "pernambuco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Piauí",
+          "synonyms": [
+            "PI",
+            "piauí"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rio de Janeiro",
+          "synonyms": [
+            "rio de janeiro",
+            "RJ"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rio Grande do Norte",
+          "synonyms": [
+            "rio grande do norte",
+            "RN"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rio Grande do Sul",
+          "synonyms": [
+            "rio grande do sul",
+            "RS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rondônia",
+          "synonyms": [
+            "RO",
+            "rondônia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Roraima",
+          "synonyms": [
+            "roraima",
+            "RR"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Santa Catarina",
+          "synonyms": [
+            "santa catarina",
+            "SC"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "São Paulo",
+          "synonyms": [
+            "são paulo",
+            "SP"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sergipe",
+          "synonyms": [
+            "SE",
+            "Sergipe"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tocantins",
+          "synonyms": [
+            "TO",
+            "tocantins"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Opções",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Não",
+          "synonyms": [
+            "n",
+            "nao",
+            "não"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sim",
+          "synonyms": [
+            "s",
+            "sim"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "suporte",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Ajuda",
+          "synonyms": [
+            "ajuda",
+            "apoio",
+            "suporte"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Atendimento",
+          "synonyms": [
+            "atendimento"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Resgate",
+          "synonyms": [
+            "resgates"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Socorro",
+          "synonyms": [
+            "socorro"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, sou seu assistente virtual OrbitSafe AI. No que posso ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_2_1780944836486",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor, digite seu número de telefone ( DDD):"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1780941014465",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1780941014466",
+      "previous_sibling": "handler_3_1780941014466"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual é a sua idade?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_7_1780940990793",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1780940990796",
+      "previous_sibling": "handler_3_1780940990796"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor, faça uma breve descrição da emergência:"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_9_1780941152944",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1780941152945",
+      "previous_sibling": "handler_5_1780941152945"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1780940913193",
+      "context": {
+        "nome_completo": "true"
+      },
+      "conditions": "true",
+      "event_name": "input",
+      "dialog_node": "handler_2_1780940913195"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "CENTRAL DE EMERGÊNCIAS ORBITSAFE AI. \n\nPara iniciar o cadastro, responda as seguintes questões: \n\nQual o seu nome completo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_7_1780940913193",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1780940913195",
+      "previous_sibling": "handler_2_1780940913195"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1780940990793",
+      "context": {
+        "idade": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1780940990796"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1780941014465",
+      "context": {
+        "telefone": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1780941014466"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1780941152944",
+      "context": {
+        "descricao": "true"
+      },
+      "conditions": "true",
+      "event_name": "input",
+      "dialog_node": "handler_5_1780941152945"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1780941075725",
+      "context": {
+        "endereco": "true"
+      },
+      "conditions": "true",
+      "event_name": "input",
+      "dialog_node": "handler_8_1780941075728"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual é o endereço completo do local?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_2_1780941075725",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1780941075728",
+      "previous_sibling": "handler_8_1780941075728"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Somos uma equipe de estudantes de desenvolvimento da FIAP comprometidos em desenvolver soluções tecnológicas inovadoras capazes de gerar impacto positivo na sociedade. Através do projeto OrbitSafe, buscamos aplicar na prática os conhecimentos adquiridos para enfrentar desafios reais relacionados à segurança, conectividade e monitoramento ambiental.\n\nO nosso chatbot nasceu da necessidade de criar uma ferramenta capaz de auxiliar comunidades vulneráveis, regiões remotas e órgãos de emergência por meio da utilização de Inteligência Artificial, análise de dados climáticos e tecnologias inspiradas na exploração espacial. Acreditamos que a tecnologia pode ser utilizada como uma poderosa aliada na prevenção de desastres, na redução de riscos e na proteção de vidas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1780837725842",
+      "conditions": "#sistema",
+      "dialog_node": "node_10_1780858955453"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você deseja consultar informações sobre clima ou desastres ambientais. O OrbitSafe AI pode auxiliar com dados sobre chuvas, tempestades, calor extremo, enchentes, deslizamentos, secas e outros riscos ambientais.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Informe o evento que deseja consultar:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "EVENTO ",
+            "options": [
+              {
+                "label": "Desastres",
+                "value": {
+                  "input": {
+                    "text": "Desastres"
+                  }
+                }
+              },
+              {
+                "label": "Clima",
+                "value": {
+                  "input": {
+                    "text": "Clima"
+                  }
+                }
+              },
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1780837725842",
+      "conditions": "#riscos",
+      "dialog_node": "node_1_1780886770784",
+      "previous_sibling": "node_3_1780879059301"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As enchentes ocorrem quando o volume de água ultrapassa a capacidade de rios, córregos ou sistemas de drenagem, provocando o alagamento de áreas urbanas e rurais. Elas são frequentemente causadas por chuvas intensas, ocupação irregular de margens de rios e deficiência na drenagem urbana. As enchentes podem causar danos a residências, interrupção de serviços essenciais e dificultar a mobilidade da população.\n\nRecomendações:\n• Evite atravessar áreas alagadas.\n• Procure locais seguros e elevados.\n• Acompanhe os alertas das autoridades.\n\nEstados com maior risco de enchentes:\n• Rio Grande do Sul\n• Pará\n• Amazonas\n• Pernambuco\n• Bahia"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780929795312",
+      "conditions": "@desastre:enchente",
+      "dialog_node": "node_1_1780930073089",
+      "previous_sibling": "node_6_1780930010380"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "CENTRAL DE EMERGÊNCIAS ORBITSAFE AI\n\nPara iniciar o cadastro, responda as seguintes questões: \n\nQual o seu nome completo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "#solicitar_ajuda",
+      "dialog_node": "node_1_1780939693954",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Minas Gerais\n\nÍndice OrbitSafe: 68/100\nNível de Risco: MÉDIO\n\nEvento Detectado:\nFormação de tempestades severas em áreas isoladas.\n\nRecomendação:\nMantenha atenção aos alertas locais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:(Minas Gerais)",
+      "dialog_node": "node_2_1780885654375",
+      "previous_sibling": "node_6_1780885606736"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Bahia\n\nÍndice OrbitSafe: 63/100\nNível de Risco: MÉDIO\n\nEvento Detectado:\nChuvas intensas e possibilidade de alagamentos pontuais.\n\nRecomendação:\nEvite áreas historicamente afetadas por enchentes."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:Bahia",
+      "dialog_node": "node_2_1780885878961",
+      "previous_sibling": "node_6_1780885789685"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os incêndios florestais são queimadas que se espalham de forma descontrolada por áreas de vegetação. Podem ser provocados por fatores naturais, como raios, ou por ações humanas, especialmente durante períodos de seca e altas temperaturas. Além dos danos ambientais, os incêndios afetam a qualidade do ar, a biodiversidade e podem ameaçar comunidades próximas.\n\nRecomendações:\n• Evite queimadas em áreas de vegetação.\n• Informe focos de incêndio às autoridades.\n• Afaste-se de áreas com fumaça intensa.\n\nEstados com maior risco de incêndios:\n• Mato Grosso\n• Pará\n• Tocantins\n• Rondônia\n• Maranhão"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780929795312",
+      "conditions": "@desastre:incêndio",
+      "dialog_node": "node_2_1780930102769",
+      "previous_sibling": "node_8_1780930094175"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As chuvas são fundamentais para o ciclo da água, porém quando ocorrem de forma intensa podem provocar alagamentos, enchentes e deslizamentos.\n\nEstados com maior incidência de chuvas e monitoramento ativo:\n• Amazonas\n• Pará\n• Bahia\n• Pernambuco\n• Rio Grande do Sul\n\nRecomendações:\n• Evite áreas alagadas.\n• Acompanhe os alertas meteorológicos.\n• Procure locais seguros durante chuvas intensas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1780930291122",
+      "conditions": "@clima:chuva",
+      "dialog_node": "node_2_1780930301193"
+    },
+    {
+      "type": "standard",
+      "title": "idade",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual é a sua idade?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1780939693954",
+      "context": {
+        "nome_completo": "<? input.text ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1780943794265"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Precisa de mais alguma coisa?"
+              },
+              {
+                "text": "Eu que agradeço!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#agradecimento",
+      "dialog_node": "node_2_1780944836486",
+      "previous_sibling": "node_4_1780837725842"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Atualmente, o sistema OrbitSafe AI identificou condições climáticas e ambientais que exigem atenção em alguns estados brasileiros. Os alertas incluem riscos de tempestades severas, enchentes, deslizamentos de terra, chuvas intensas e elevação do nível dos rios.\n\nEstados monitorados com alertas ativos:\n• São Paulo;\n• Rio Grande do Sul;\n• Santa Catarina;\n• Paraná;\n• Rio de Janeiro;\n• Minas Gerais;\n• Pará;\n• Amazonas;\n• Bahia;\n• Pernambuco."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "\nPara saber mais informações e recomendações, verifique o nível de risco da região que deseja!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1780837725842",
+      "conditions": "#alertas",
+      "dialog_node": "node_3_1780878134321",
+      "previous_sibling": "node_10_1780858955453"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os principais riscos monitorados pelo OrbitSafe AI são enchentes, deslizamentos de terra, tempestades severas, secas prolongadas, ondas de calor, incêndios florestais e elevação do nível dos rios. Nosso sistema utiliza dados meteorológicos e análises ambientais para identificar possíveis situações de risco e fornecer alertas preventivos, ajudando na proteção de comunidades e na tomada de decisões mais seguras."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Qual região deseja consultar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1780837725842",
+      "conditions": "#região",
+      "dialog_node": "node_3_1780879059301",
+      "previous_sibling": "node_3_1780878134321"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Pernambuco\n\nÍndice OrbitSafe: 69/100\nNível de Risco: MÉDIO\n\nEvento Detectado:\nChuvas fortes e risco moderado de alagamentos urbanos.\n\nRecomendação:\nMantenha atenção às condições meteorológicas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:Pernambuco",
+      "dialog_node": "node_3_1780885914591",
+      "previous_sibling": "node_2_1780885878961"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Informe o tipo de desastre que gostaria da informação:",
+            "options": [
+              {
+                "label": "Deslizamento",
+                "value": {
+                  "input": {
+                    "text": "Deslizamento"
+                  }
+                }
+              },
+              {
+                "label": "Enchente",
+                "value": {
+                  "input": {
+                    "text": "Enchente"
+                  }
+                }
+              },
+              {
+                "label": "Tempestade",
+                "value": {
+                  "input": {
+                    "text": "Tempestade"
+                  }
+                }
+              },
+              {
+                "label": "Incêndio",
+                "value": {
+                  "input": {
+                    "text": "Incêndio"
+                  }
+                }
+              },
+              {
+                "label": "Ventos",
+                "value": {
+                  "input": {
+                    "text": "Ventos"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1780886770784",
+      "conditions": "@desastre",
+      "dialog_node": "node_3_1780929795312"
+    },
+    {
+      "type": "standard",
+      "title": "telefone",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor, digite seu número de telefone (DDD):"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1780943794265",
+      "context": {
+        "idade": "<? input.text ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1780943962922"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Seja bem-vindo ao OrbitSafe AI.\n\nSou um assistente inteligente desenvolvido para monitorar riscos climáticos, emergências ambientais e situações que podem impactar regiões remotas ou vulneráveis.\n\nUtilizando Inteligência Artificial, dados meteorológicos e informações obtidas por tecnologias de observação da Terra, posso ajudar você a acompanhar alertas, consultar condições climáticas, verificar níveis de risco e registrar ocorrências emergenciais.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Como posso te ajudar?",
+            "options": [
+              {
+                "label": "Sobre nós",
+                "value": {
+                  "input": {
+                    "text": "Sobre nós"
+                  }
+                }
+              },
+              {
+                "label": "Verificar alertas de emergência",
+                "value": {
+                  "input": {
+                    "text": "Verificar alertas de emergência"
+                  }
+                }
+              },
+              {
+                "label": "Consultar regiões de risco",
+                "value": {
+                  "input": {
+                    "text": "Consultar regiões de risco"
+                  }
+                }
+              },
+              {
+                "label": "Solicitar ajuda ",
+                "value": {
+                  "input": {
+                    "text": "Solicitar ajuda "
+                  }
+                }
+              },
+              {
+                "label": "Informações ambientais",
+                "value": {
+                  "input": {
+                    "text": "Informações ambientais"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#saudação",
+      "dialog_node": "node_4_1780837725842",
+      "previous_sibling": "node_1_1780939693954"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: São Paulo\n\nÍndice OrbitSafe: 87/100\nNível de Risco: ALTO\n\nEvento Detectado:\nTempestade severa com potencial para alagamentos urbanos.\n\nRecomendação:\nEvite áreas de risco e acompanhe os comunicados da Defesa Civil."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:(São Paulo)",
+      "dialog_node": "node_4_1780879375930"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Pará\n\nÍndice OrbitSafe: 72/100\nNível de Risco: ALTO\n\nEvento Detectado:\nElevação do nível dos rios e risco de inundações.\n\nRecomendação:\nEvite áreas próximas às margens dos rios."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:Pará",
+      "dialog_node": "node_4_1780885690175",
+      "previous_sibling": "node_2_1780885654375"
+    },
+    {
+      "type": "standard",
+      "parent": "node_8_1780944187643",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1780939693954"
+      },
+      "conditions": "@Opções:Não",
+      "dialog_node": "node_4_1780944332026"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os ventos fortes são deslocamentos intensos de massas de ar que podem ocorrer durante tempestades, frentes frias e ciclones. Dependendo da velocidade, podem causar quedas de árvores, destelhamentos, interrupções de energia e danos estruturais. Esses eventos costumam afetar principalmente áreas urbanas, litorâneas e regiões sujeitas a mudanças bruscas nas condições meteorológicas.\n\nRecomendações:\n• Evite permanecer próximo a árvores e estruturas frágeis.\n• Reforce objetos que possam ser carregados pelo vento.\n• Procure abrigo em locais seguros.\n\nEstados com maior risco de ventos fortes:\n• Rio Grande do Sul\n• Santa Catarina\n• Paraná\n• São Paulo\n• Rio de Janeiro"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780929795312",
+      "conditions": "@desastre:vento",
+      "dialog_node": "node_5_1780930110998",
+      "previous_sibling": "node_2_1780930102769"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A temperatura é um dos principais indicadores climáticos monitorados pelo OrbitSafe AI. Variações extremas podem provocar ondas de calor, secas, tempestades e impactos à saúde da população.\n\nEstados com maiores registros de temperaturas elevadas:\n• Mato Grosso\n• Tocantins\n• Goiás\n• Piauí\n• Bahia\n\nRecomendações:\n• Hidrate-se regularmente.\n• Evite exposição ao calor excessivo.\n• Procure locais frescos e ventilados durante períodos de altas temperaturas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1780930291122",
+      "conditions": "@clima:temperatura",
+      "dialog_node": "node_5_1780936666042",
+      "previous_sibling": "node_7_1780930326042"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Santa Catarina\n\nÍndice OrbitSafe: 84/100\nNível de Risco: ALTO\n\nEvento Detectado:\nRisco elevado de deslizamentos devido ao acumulado de chuvas.\n\nRecomendação:\nEvite áreas de encosta e siga as orientações da Defesa Civil."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:(Santa Catarina)",
+      "dialog_node": "node_6_1780885523981",
+      "previous_sibling": "node_9_1780885483666"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Rio de Janeiro\n\nÍndice OrbitSafe: 79/100\nNível de Risco: ALTO\n\nEvento Detectado:\nChuvas intensas com risco de alagamentos e deslizamentos.\n\nRecomendação:\nEvite deslocamentos desnecessários em áreas de risco."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:(Rio de Janeiro)",
+      "dialog_node": "node_6_1780885606736",
+      "previous_sibling": "node_7_1780885560589"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Amazonas\n\nÍndice OrbitSafe: 61/100\nNível de Risco: MÉDIO\n\nEvento Detectado:\nCheia dos rios e chuvas persistentes.\n\nRecomendação:\nAcompanhe o  monitoramento regional e evite áreas próximas às margens dos rios."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:Amazonas",
+      "dialog_node": "node_6_1780885789685",
+      "previous_sibling": "node_4_1780885690175"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Os deslizamentos de terra são movimentos de solo, rochas e vegetação que descem encostas devido à perda de estabilidade do terreno. Esse fenômeno ocorre principalmente após chuvas intensas e prolongadas, quando o solo fica com muita água e perde sua capacidade de sustentação.\n\nAlém das chuvas, fatores como desmatamento, ocupação irregular de encostas e alterações no relevo podem aumentar significativamente o risco de deslizamentos. Esses eventos podem causar danos a residências, estradas, redes de energia e representar graves riscos à população.\n\nRecomendações:\n• Evite áreas de encosta durante chuvas fortes.\n• Observe rachaduras em muros, paredes e no solo.\n• Siga as orientações da Defesa Civil.\n\nEstados com maior risco de deslizamentos:\n• Rio de Janeiro\n• Santa Catarina\n• São Paulo\n• Minas Gerais\n• Espírito Santo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780929795312",
+      "conditions": "@desastre:deslizamento",
+      "dialog_node": "node_6_1780930010380"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Paraná\n\nÍndice OrbitSafe: 65/100\nNível de Risco: MÉDIO\n\nEvento Detectado:\nTempestades com rajadas de vento e chuva intensa.\n\nRecomendação:\nAcompanhe as condições climáticas da sua região."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:Paraná",
+      "dialog_node": "node_7_1780885560589",
+      "previous_sibling": "node_6_1780885523981"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Informe o tipo de clima que gostaria da informação:",
+            "options": [
+              {
+                "label": "Chuva",
+                "value": {
+                  "input": {
+                    "text": "Chuva"
+                  }
+                }
+              },
+              {
+                "label": "Sol",
+                "value": {
+                  "input": {
+                    "text": "Sol"
+                  }
+                }
+              },
+              {
+                "label": "Temperatura",
+                "value": {
+                  "input": {
+                    "text": "Temperatura"
+                  }
+                }
+              },
+              {
+                "label": "Umidade",
+                "value": {
+                  "input": {
+                    "text": "Umidade"
+                  }
+                }
+              }
+            ],
+            "description": "Dentro das condições climáticas terá as regiões mais propensas para cada risco",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1780886770784",
+      "conditions": "#riscos && @clima",
+      "dialog_node": "node_7_1780930291122",
+      "previous_sibling": "node_3_1780929795312"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O sol é essencial para o equilíbrio climático, porém períodos prolongados de alta incidência solar podem aumentar as temperaturas, reduzir a umidade do ar e favorecer secas e queimadas.\n\nAtualmente, as regiões com maior exposição ao calor e à radiação solar são:\n• Mato Grosso\n• Tocantins\n• Goiás\n• Piauí\n• Mato Grosso do Sul\n \nRecomendações:\n• Mantenha-se hidratado.\n• Evite exposição prolongada entre 10h e 16h.\n• Utilize protetor solar e roupas leves."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1780930291122",
+      "conditions": "@clima:sol",
+      "dialog_node": "node_7_1780930326042",
+      "previous_sibling": "node_2_1780930301193"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1780930291122",
+      "conditions": "@clima:umidade",
+      "dialog_node": "node_7_1780936674107",
+      "previous_sibling": "node_5_1780936666042"
+    },
+    {
+      "type": "standard",
+      "title": "endereço",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual é o endereço completo do local?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1780943962922",
+      "context": {
+        "telefone": "<? input.text ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1780944020111"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI \n\nEstado: @estado\n\nÍndice OrbitSafe: 18/100\nNível de Risco: BAIXO\n\nNenhum alerta de emergência foi identificado neste momento.\n\nO sistema OrbitSafe AI continua monitorando a região utilizando dados meteorológicos e análises ambientais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado",
+      "dialog_node": "node_8_1780885980719",
+      "previous_sibling": "node_3_1780885914591"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As tempestades são fenômenos meteorológicos caracterizados por chuvas intensas, descargas elétricas, rajadas de vento e, em alguns casos, granizo. Elas se formam devido à instabilidade atmosférica e ao encontro de massas de ar com diferentes temperaturas. Dependendo da intensidade, podem causar alagamentos, quedas de árvores, interrupções no fornecimento de energia e danos à infraestrutura.\n\n Recomendações:\n• Evite permanecer em áreas abertas.\n• Desconecte aparelhos eletrônicos durante tempestades severas.\n• Busque abrigo seguro.\n\nEstados com maior risco de tempestades:\n• São Paulo\n• Paraná\n• Mato Grosso\n• Minas Gerais\n• Goiás"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780929795312",
+      "conditions": "@desastre:tempestade",
+      "dialog_node": "node_8_1780930094175",
+      "previous_sibling": "node_1_1780930073089"
+    },
+    {
+      "type": "standard",
+      "title": "finalização",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Registro de Ocorrência realizado com sucesso! Confirme os dados registrados:\n\n• Nome: $nome_completo\n• Idade: $idade anos\n• Telefone: $telefone\n• Endereço: $endereco\n• Descrição: $descricao\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Os dados estão corretos?",
+            "options": [
+              {
+                "label": "Sim",
+                "value": {
+                  "input": {
+                    "text": "Sim"
+                  }
+                }
+              },
+              {
+                "label": "Não",
+                "value": {
+                  "input": {
+                    "text": "Não"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1780944079092",
+      "context": {
+        "descricao": "<? input.text ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1780944187643"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cadastro completo! Certifique-se de ficar em um local seguro e aguarde o resgate dentro de alguns minutos."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1780944187643",
+      "conditions": "@Opções:Sim",
+      "dialog_node": "node_8_1780944363837",
+      "previous_sibling": "node_4_1780944332026"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ALERTA ORBITSAFE AI\n\nEstado: Rio Grande do Sul\n\nÍndice OrbitSafe: 91/100\nNível de Risco: ALTO\n\nEvento Detectado:\nChuvas extremas, risco de enchentes e ventos intensos.\n\nRecomendação:\nMantenha atenção aos avisos das autoridades locais."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Voltar",
+                "value": {
+                  "input": {
+                    "text": "saudação"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1780879059301",
+      "conditions": "@estado:(Rio Grande do Sul)",
+      "dialog_node": "node_9_1780885483666",
+      "previous_sibling": "node_4_1780879375930"
+    },
+    {
+      "type": "standard",
+      "title": "descrição",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por favor, faça uma breve descrição da emergência:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1780944020111",
+      "context": {
+        "endereco": "<? input.text ?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_9_1780944079092"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1780939693954",
+      "variable": "$telefone",
+      "dialog_node": "slot_10_1780941014465",
+      "previous_sibling": "slot_7_1780940990793"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1780939693954",
+      "variable": "$endereco",
+      "dialog_node": "slot_2_1780941075725",
+      "previous_sibling": "slot_10_1780941014465"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1780939693954",
+      "variable": "$nome_completo",
+      "dialog_node": "slot_7_1780940913193",
+      "previous_sibling": "node_2_1780943794265"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1780939693954",
+      "variable": "$idade",
+      "dialog_node": "slot_7_1780940990793",
+      "previous_sibling": "slot_7_1780940913193"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1780939693954",
+      "variable": "$descricao",
+      "dialog_node": "slot_9_1780941152944",
+      "previous_sibling": "slot_2_1780941075725"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "language": "pt-br",
+  "description": "Monitoramento de riscos climáticos, consulta de alertas ambientais, suporte da regiões remotas através de dados espaciais.",
+  "name": "Assistente_OrbitSafe-dialog"
+}
