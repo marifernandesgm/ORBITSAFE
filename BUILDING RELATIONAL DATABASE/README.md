@@ -1,11 +1,12 @@
-# 🛰️ OrbitSafe — Banco de Dados Relacional para Monitoramento e Emergências Climáticas
+# 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
-> **Global Solution — Turma 1TDSPH (2026)**
+> Global Solution — Turma 1TDSPH (2026)
+> Disciplina: Building Relational DataBase   
 > Projeto desenvolvido para a disciplina de **Building Relational Database (BRD)**, contemplando a modelagem conceitual, modelo relacional e implementação do banco de dados Oracle para o sistema OrbitSafe.
 
 ---
 
-# 📌 Descrição do Projeto
+## DESCRIÇÃO DO PROJETO
 
 O **OrbitSafe** é uma solução desenvolvida durante a **Global Solution FIAP 2026** com o objetivo de criar uma plataforma capaz de auxiliar o monitoramento de emergências ambientais e climáticas em regiões remotas, utilizando conceitos inspirados em tecnologias espaciais e comunicação via satélite.
 
@@ -22,34 +23,34 @@ O projeto contempla:
 
 ---
 
-# 🎯 Objetivo
+# OBEJETIVO
 
 O objetivo deste projeto é desenvolver uma estrutura de banco de dados relacional capaz de suportar o funcionamento do sistema OrbitSafe, garantindo organização, integridade e consistência das informações relacionadas ao monitoramento de emergências, dispositivos, usuários e comunicação via satélites.
 
 ---
 
-# 🗄️ Tecnologias Utilizadas
+# TECNOLOGIAS UTILIZADAS
 
 O banco de dados foi desenvolvido utilizando as tecnologias e ferramentas estudadas na disciplina.
 
-* Oracle Database 11g
-* Oracle SQL Developer Data Modeler
-* SQL (DDL)
-* Modelagem Entidade-Relacionamento (MER)
-* Modelo Relacional
-* Chaves Primárias (Primary Key)
-* Chaves Estrangeiras (Foreign Key)
-* Regras de Integridade Referencial
+* Oracle Database 11g;
+* Oracle SQL Developer Data Modeler;
+* SQL (DDL);
+* Modelagem Entidade-Relacionamento (MER);
+* Modelo Relacional;
+* Chaves Primárias (Primary Key);
+* Chaves Estrangeiras (Foreign Key);
+* Regras de Integridade Referencial.
 
 ---
 
-# ⚙️ Estrutura do Banco de Dados
+## ESTRUTURA DO BANCO DE DADOS
 
 O projeto foi modelado para representar todos os componentes necessários ao funcionamento do sistema OrbitSafe.
 
 As principais entidades desenvolvidas foram:
 
-### 👤 Usuário
+### Usuário
 
 Armazena os dados dos cidadãos cadastrados no sistema, responsáveis pela utilização dos dispositivos e pelo registro das ocorrências.
 
@@ -63,7 +64,7 @@ Principais informações:
 
 ---
 
-### 📱 Dispositivo
+### Dispositivo
 
 Representa os equipamentos utilizados pelos usuários para envio de alertas e compartilhamento de localização.
 
@@ -79,7 +80,7 @@ Informações armazenadas:
 
 ---
 
-### 🚨 Emergência
+### Emergência
 
 Responsável pelo armazenamento das ocorrências registradas.
 
@@ -100,7 +101,7 @@ Além disso, cada emergência está vinculada a:
 
 ---
 
-### 📡 Satélite
+### Satélite
 
 Representa os satélites responsáveis pelo monitoramento e comunicação das regiões atendidas.
 
@@ -112,7 +113,7 @@ São armazenados:
 
 ---
 
-### 🏢 Central de Controle
+### Central de Controle
 
 Responsável pelo gerenciamento das emergências registradas.
 
@@ -124,7 +125,7 @@ Informações:
 
 ---
 
-### 👨‍💼 Operador
+### Operador
 
 Representa os profissionais responsáveis pelo atendimento das ocorrências.
 
@@ -132,7 +133,7 @@ Cada operador pertence a uma central de controle.
 
 ---
 
-### 🔗 Operador_Emergência
+### Operador_Emergência
 
 Entidade associativa responsável por implementar o relacionamento muitos-para-muitos entre Operadores e Emergências.
 
@@ -143,7 +144,7 @@ Também registra:
 
 ---
 
-# 📐 Regras de Negócio
+# Regras de Negócio
 
 Durante a modelagem foram definidas as seguintes regras:
 
@@ -158,7 +159,7 @@ Durante a modelagem foram definidas as seguintes regras:
 
 ---
 
-# 🧩 Modelo de Dados
+# Modelo de Dados
 
 O projeto foi desenvolvido seguindo as etapas clássicas de modelagem de banco de dados:
 
@@ -171,19 +172,19 @@ O projeto foi desenvolvido seguindo as etapas clássicas de modelagem de banco d
 
 ---
 
-# 📁 Estrutura do Projeto
+## ESTRUTURA DO PROJETO
 
-```text
+<pre>
 ORBITSAFE_DATABASE/
 │
 ├── arquivo_sql.ddl          # Script SQL para criação das tabelas
 ├── 1TDSPH_ORBITSAFE.pdf     # Documentação completa do projeto
 └── README.md
-```
+</pre>
 
 ---
 
-# 🏛️ Estrutura Relacional
+## SISTEMA RELACIONAL
 
 O banco de dados é composto pelas seguintes tabelas:
 
@@ -199,26 +200,26 @@ As tabelas estão relacionadas por meio de chaves primárias e estrangeiras, gar
 
 ---
 
-# 📚 Conceitos Aplicados
+## CONCEITOS APLICADOS
 
 Durante o desenvolvimento foram aplicados diversos conceitos da disciplina de Building Relational Database, como:
 
-* Levantamento de requisitos
-* Modelagem conceitual (MER)
-* Engenharia reversa para modelo relacional
-* Normalização de dados
-* Criação de tabelas
-* Definição de atributos
-* Chaves primárias (PK)
-* Chaves estrangeiras (FK)
-* Relacionamentos 1:N
-* Relacionamentos N:N por entidade associativa
-* Integridade referencial
-* Implementação em Oracle SQL
+* Levantamento de requisitos;
+* Modelagem conceitual (MER);
+* Engenharia reversa para modelo relacional;
+* Normalização de dados;
+* Criação de tabelas;
+* Definição de atributos;
+* Chaves primárias (PK);
+* Chaves estrangeiras (FK);
+* Relacionamentos 1:N;
+* Relacionamentos N:N por entidade associativa;
+* Integridade referencial;
+* Implementação em Oracle SQL.
 
 ---
 
-# ▶️ Como Executar
+## COMO EXECUTAR
 
 1. Abra o **Oracle SQL Developer** ou outra ferramenta compatível com Oracle Database.
 
@@ -234,7 +235,7 @@ arquivo_sql.ddl
 
 ---
 
-# 📄 Documentação
+## DOCUMENTAÇÃO
 
 A documentação completa do projeto encontra-se no arquivo:
 
@@ -254,28 +255,24 @@ Ela contém:
 
 ---
 
-# 👥 Integrantes
+## INTEGRANTES & AUTORES
 
-**Andre Luiz Ramos Forastieri** — RM 572203
+Abaixo encontram-se os detalhes dos desenvolvedores responsáveis pela arquitetura e engenharia do OrbitSafe:
 
-**Eduardo Damasio Guelere** — RM 569960
-
-**Isabelle Ferreira Neri Feitoza** — RM 573507
-
-**Marina Fernandes Gomes Mesquita** — RM 571265
-
-**Milena Silva Conegin** — RM 568923
-
-**Turma:** 1TDSPH
-
-**FIAP — Global Solution 2026**
+* Isabelle Ferreira Neri Feitoza — RM 573507 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/isabelle-ferreira-8844593ab/) | [GitHub](https://github.com/isabelleferreiraa)
+* Milena Silva Conegin — RM 568923 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/milena-conegin-996b22269?utm_source=share_via&utm_content=profile&utm_medium=member_ios) | [GitHub](https://github.com/MilenaConegin)
+* Marina Fernandes Gomes Mesquita — RM 571265 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/marifernandesgm-58460a40a) | [GitHub](https://github.com/marifernandesgm)
 
 ---
 
-# 📞 Contato
+## CONTATO
 
-Em caso de dúvidas sobre o projeto, entre em contato com a equipe de desenvolvimento por meio do repositório oficial do OrbitSafe.
+Para dúvidas, suporte técnico ou informações sobre o ecossistema OrbitSafe, entre em contato com a equipe de desenvolvimento através dos canais abaixo:
+
+* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/marifernandesgm/ORBITSAFE.git)
 
 ---
-
-**OrbitSafe 2026 — FIAP Global Solution. Todos os direitos reservados.**
+OrbitSafe 2026 — Fiap Global Solution. Todos os direitos reservados.
