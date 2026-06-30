@@ -1,0 +1,679 @@
+/* ==================================================
+   CONTAINER PRINCIPAL DO DASHBOARD
+   ================================================== */
+
+.container-dashboard{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:0 auto;
+
+    padding:6rem 0;
+}
+
+/* ==================================================
+   TÍTULO E DESCRIÇÃO DO DASHBOARD
+   ================================================== */
+
+.titulo-dashboard{
+
+    margin-bottom:4rem;
+
+    border-left:5px solid #00cfff;
+
+    padding-left:2rem;
+}
+
+.titulo-dashboard h2{
+
+    color:#00cfff;
+
+    font-size:4rem;
+
+    margin-bottom:1rem;
+}
+
+.titulo-dashboard p{
+
+    color:#d7d7d7;
+}
+
+/* ==================================================
+   SISTEMA DE ABAS DO DASHBOARD
+   ================================================== */
+
+.abas-dashboard{
+
+    display:flex;
+
+    gap:1.5rem;
+
+    margin-bottom:4rem;
+}
+
+.btn-aba{
+
+    padding:1rem 2rem;
+
+    border:none;
+
+    border-radius:1rem;
+
+    background:#0b1d38;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn-aba:hover{
+
+    background:#00cfff;
+
+    color:black;
+}
+
+.btn-aba.active{
+
+    background:#00cfff;
+
+    color:black;
+
+    font-weight:bold;
+}
+
+/* ==================================================
+   GRID DE MÉTRICAS PRINCIPAIS
+   ================================================== */
+
+.grid-metricas{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+
+    margin-bottom:4rem;
+}
+
+.card-metrica{
+
+    background:rgba(255,255,255,.05);
+
+    padding:3rem;
+
+    border-radius:2rem;
+
+    text-align:center;
+
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+}
+
+.card-metrica h4{
+
+    margin-bottom:1rem;
+
+    color:#d7d7d7;
+}
+
+.valor-metrica{
+
+    font-size:4rem;
+
+    font-weight:bold;
+
+    color:#00cfff;
+
+    margin-bottom:1rem;
+}
+
+.tendencia{
+
+    font-size:1.6rem;
+}
+
+/* ==================================================
+   ÁREA DOS GRÁFICOS
+   ================================================== */
+
+.grade-dashboard{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:3rem;
+
+    margin-bottom:5rem;
+}
+
+.bloco-grafico{
+
+    background:rgba(255,255,255,.05);
+
+    padding:2rem;
+
+    border-radius:2rem;
+
+    box-shadow:0 0 15px rgba(0,207,255,.08);
+}
+
+.bloco-grafico h3{
+
+    margin-bottom:2rem;
+
+    color:#ffffff;
+}
+
+.area-grafico-ficticio{
+
+    background:#081528;
+
+    border:1px dashed #00cfff;
+
+    border-radius:1rem;
+
+    padding:2rem;
+
+    min-height:280px;
+}
+
+/* ==================================================
+   GRÁFICO DE LINHA (SVG)
+   ================================================== */
+
+.chart-svg{
+
+    width:100%;
+    height:250px;
+}
+
+.chart-grid-line{
+
+    stroke:#334155;
+
+    stroke-width:1;
+}
+
+.chart-line{
+
+    fill:none;
+
+    stroke:#00cfff;
+
+    stroke-width:4;
+}
+
+.chart-line-bg{
+
+    fill:rgba(0,207,255,.15);
+}
+
+/* ==================================================
+   GRÁFICO DE BARRAS
+   ================================================== */
+
+.bar-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:1rem;
+}
+
+.bar{
+
+    width:50px;
+
+    background:#00cfff;
+
+    border-radius:1rem 1rem 0 0;
+
+    position:relative;
+}
+
+.bar-value{
+
+    position:absolute;
+
+    top:-30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+}
+
+.bar-label{
+
+    color:white;
+}
+
+/* ==================================================
+   TABELA DE TRANSMISSÕES ORBITAIS
+   ================================================== */
+
+.secao-tabela{
+
+    background:rgba(255,255,255,.05);
+
+    padding:3rem;
+
+    border-radius:2rem;
+
+    margin-bottom:5rem;
+}
+
+.secao-tabela h3{
+
+    margin-bottom:2rem;
+
+    color:#00cfff;
+}
+
+.tabela-wrapper{
+
+    overflow-x:auto;
+}
+
+.tabela-dados{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.tabela-dados th{
+
+    background:#00cfff;
+
+    color:black;
+
+    padding:1.5rem;
+
+    text-align:left;
+}
+
+.tabela-dados td{
+
+    padding:1.5rem;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.tabela-dados tr:hover{
+
+    background:rgba(255,255,255,.03);
+}
+
+/* ==================================================
+   INDICADORES DE STATUS
+   ================================================== */
+
+.badge-status{
+
+    padding:.6rem 1.2rem;
+
+    border-radius:2rem;
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+}
+
+.ativo{
+
+    background:#008f39;
+}
+
+.completo{
+
+    background:#00cfff;
+
+    color:black;
+}
+
+/* ==================================================
+   GRÁFICO DE BARRAS 
+   ================================================== */
+
+.area-grafico-ficticio{
+
+    background:#081528;
+    border:1px dashed #00cfff;
+    border-radius:2rem;
+    padding:1rem;
+    min-height:280px;
+}
+
+.bar-chart-container {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grafico-resiliencia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.imagem-grafico-barras {
+    width: 100%;
+    height: 120%;
+    object-fit: fill; 
+    display: block;
+}
+
+.container-legendas-regiao {
+    position: absolute;
+    bottom: 5px; 
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 2; 
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    text-align: center;
+}
+
+.legenda-item {
+    display: block;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); 
+}
+
+.legenda-item span {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.legenda-item small {
+    display: block;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.bar-wrapper, .bar, .bar-value, .bar-label {
+    display: none;
+}
+
+/* ==================================================
+   BOTÃO SCROLL
+================================================== */
+
+html body #scrollTopBtn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+html body #scrollTopBtn:hover {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 0 15px rgba(0,207,255,0.4);
+}
+
+/* ==================================================
+   ESTILO PADRÃO DO BOTÃO HAMBÚRGUER (PC/DESKTOP)
+================================================== */
+.cabecalho__hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    color: #00cfff; 
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cabecalho__hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* ==================================================
+   RESPONSIVIDADE UNIFICADA 
+   Ajusta os gráficos do Dashboard para tablets grandes
+================================================== */
+@media(max-width:1100px){
+    .grade-dashboard{
+        grid-template-columns:1fr; 
+    }
+}
+
+/* ==================================================
+   RESPONSIVIDADE DO MENU HAMBÚRGUER 
+================================================== */
+@media (max-width: 900px) {
+    /* Exibe o botão de três listras (☰) */
+    .cabecalho__hamburger {
+        display: block;
+    }
+
+    /* Modifica a barra de navegação para manter o alinhamento com o botão */
+    .cabecalho__navbar {
+        width: 90%;
+        padding: 1.5rem 3rem;
+        position: relative; 
+    }
+
+    /* Transforma a lista horizontal em um menu suspenso oculto */
+    .cabecalho__lista {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(7, 20, 46, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 207, 255, 0.2);
+        border-radius: 2rem;
+        padding: 3rem;
+        gap: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    /* classe ativada quando clicada, mostra o menu */
+    .cabecalho__lista.active {
+        display: flex;
+    }
+
+    /* Ajuste fino das métricas para telas desse tamanho */
+    .grid-metricas{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ==================================================
+   RESPONSIVIDADE TOTAL PARA CELULARES 
+   Mantém as reduções do seu Dashboard original salvas
+================================================== */
+@media(max-width:600px){
+    html{
+        font-size:50%;
+    }
+
+    .container-dashboard{
+        width:95%;
+        padding:4rem 0;
+    }
+
+    .titulo-dashboard h2{
+        font-size:3rem;
+    }
+
+    .titulo-dashboard p{
+        line-height:1.7;
+    }
+
+    .abas-dashboard{
+        flex-direction:column;
+    }
+
+    .btn-aba{
+        width:100%;
+    }
+
+    .grid-metricas{
+        grid-template-columns:1fr;
+    }
+
+    .card-metrica{
+        padding:2.5rem;
+    }
+
+    .valor-metrica{
+        font-size:3rem;
+    }
+
+    .bloco-grafico{
+        padding:2rem;
+    }
+
+    .area-grafico-ficticio{
+        min-height:220px;
+    }
+
+    .chart-svg{
+        height:180px;
+    }
+
+    .bar-chart-container{
+        height:180px;
+    }
+
+    .bar{
+        width:35px;
+    }
+
+    .bar-label{
+        font-size:1.4rem;
+    }
+
+    .secao-tabela{
+        padding:2rem;
+    }
+
+    .tabela-dados th,
+    .tabela-dados td{
+        padding:1rem;
+        font-size:1.4rem;
+    }
+}
+/* ==========================================
+   ESTILIZAÇÃO DO PARÁGRAFO DE DETALHES (SATÉLITES)
+========================================== */
+.texto-satelite {
+    text-align: center;         
+    max-width: 850px;           
+    margin: 4rem auto 0 auto;   
+    line-height: 1.6;           
+    color: #e2e8f0;             
+}
+
+/* ==================================================
+   EFEITOS DE HOVER NOS CARDS E BLOCOS
+   ================================================== */
+
+.card-metrica,
+.bloco-grafico,
+.secao-tabela{
+
+    transition:.4s;
+
+}
+
+.card-metrica:hover,
+.bloco-grafico:hover,
+.secao-tabela:hover{
+
+    box-shadow:
+    0 0 25px rgba(0,207,255,.25);
+
+}
+
+/* ==================================================
+   PERSONALIZAÇÃO DA BARRA DE ROLAGEM
+   ================================================== */
+
+.tabela-wrapper::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.tabela-wrapper::-webkit-scrollbar-thumb{
+
+    background:#00cfff;
+
+    border-radius:1rem;
+
+}
+
+/* ==================================================
+   CORES DOS INDICADORES DE TENDÊNCIA
+   ================================================== */
+
+.alta{
+
+    color:#34d399;
+
+}
+
+.baixa{
+
+    color:#f87171;
+
+}
+
+.estavel{
+
+    color:#facc15;
+
+}
+
+/* ==================================================
+   ANIMAÇÃO DE ENTRADA DOS CARDS
+   ================================================== */
+
+.card-metrica{
+
+    animation:fadeCard .8s;
+}
+
+@keyframes fadeCard{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

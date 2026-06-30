@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-br">
+  <!-- Integração do chatbot IBM Watson Assistant -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "79fb87eb-c816-4fd3-aa18-846c47cedc20",
+            region: "https://integrations.us-south.assistant.watson.appdomain.cloud",
+            serviceInstanceID: "0177986c-b5c0-4d7f-a7f8-b4a819fe3eaa",
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+    <!-- Script responsável pelas funcionalidades interativas da página -->
+    <script src="../js/script.js"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OrbitSafe - Integrantes</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/integrantes.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal contendo a logo e o menu de navegação -->
+    <header class="cabecalho">
+
+        <nav class="cabecalho__navbar">
+
+            <a href="../index.html" class="cabecalho__logo">
+                <img src="../assets/logo.png" alt="Logo OrbitSafe">
+            </a>
+
+            <button id="menu-toggle" class="cabecalho__hamburger">
+                ☰
+            </button>
+
+            <ul class="cabecalho__lista" id="nav-menu">
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="../index.html">Home</a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./sobre.html">Sobre</a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./monitoramento.html">Monitoramento</a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./dashboard.html">Dashboard</a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./faq.html">FAQ</a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./contato.html">Contato</a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link cabecalho__link--active" href="./integrantes.html">
+                        Integrantes
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal da página de integrantes -->
+    <main class="integrantes">
+
+        <!-- Seção de apresentação da equipe do projeto -->
+        <section class="integrantes__titulo">
+
+            <h1>Nossa Equipe</h1>
+
+            <p>
+                Conheça os desenvolvedores responsáveis pela criação do OrbitSafe.
+            </p>
+
+        </section>
+
+        <!-- Container que reúne todos os membros da equipe -->
+        <div class="integrantes__container">
+
+            <!-- Card com informações da integrante Isabelle -->
+            <section class="integrante">
+
+                <img src="../assets/integranteIsabelle.png" alt="Isabelle Ferreira">
+
+                <h2>Isabelle Ferreira Neri Feitoza</h2>
+
+                <p>RM 573507</p>
+
+                <p>JavaScript General & UI</p>
+
+                <p>TURMA 1TDSPH</p>
+
+                <div class="integrante__links">
+
+                    <a href="https://github.com/isabelleferreiraa" target="_blank">
+
+                        <img src="../assets/github.png" alt="GitHub">
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/isabelle-ferreira-8844593ab/" target="_blank">
+
+                        <img src="../assets/linkedin.png" alt="LinkedIn">
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- Card com informações da integrante Milena -->
+            <section class="integrante">
+
+                <img src="../assets/integranteMilena.png" alt="Milena Conegin">
+
+                <h2>Milena Silva Conegin</h2>
+
+                <p>RM 568923</p>
+
+                <p>HTML Semantics & UX</p>
+
+                <p>TURMA 1TDSPH</p>
+
+                <div class="integrante__links">
+
+                    <a href="https://github.com/MilenaConegin" target="_blank">
+
+                        <img src="../assets/github.png" alt="GitHub">
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/milena-conegin-996b22269" target="_blank">
+
+                        <img src="../assets/linkedin.png" alt="LinkedIn">
+
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- Card com informações da integrante Marina -->
+            <section class="integrante">
+
+                <img src="../assets/integranteMarina.png" alt="Marina Fernandes">
+
+                <h2>Marina Fernandes Gomes Mesquita</h2>
+
+                <p>RM 571265</p>
+
+                <p>Front-End Design & UX</p>
+
+                <p>TURMA 1TDSPH</p>
+
+                <div class="integrante__links">
+
+                    <a href="https://github.com/marifernandesgm" target="_blank">
+
+                        <img src="../assets/github.png" alt="GitHub">
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/marifernandesgm-58460a40a" target="_blank">
+
+                        <img src="../assets/linkedin.png" alt="LinkedIn">
+
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Seção que disponibiliza o acesso ao repositório do projeto -->
+        <section class="repositorio">
+
+            <h2>Repositório do Projeto</h2>
+
+            <p>
+                Acesse o código-fonte completo do OrbitSafe no GitHub.
+            </p>
+
+            <a href="https://github.com/isabelleferreiraa/ORBITSAFE-Global-Solution" target="_blank" class="repositorio__botao">
+
+                Ver Repositório
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé com informações institucionais do projeto -->
+    <footer class="rodape">
+        <p>© 2026 OrbitSafe - Global Solution - FIAP</p>
+    </footer>
+
+    <!-- Botão de acesso rápido para envio de alertas SOS -->
+    <button class="sos-btn" id="abrirSOS">
+        🚨
+    </button>
+
+    <!-- Modal utilizado para registrar solicitações de emergência -->
+    <div class="sos-modal" id="modalSOS">
+
+        <div class="sos-conteudo">
+
+            <h3>🚨 Emergência</h3>
+
+            <input type="text" id="sos-nome" placeholder="Nome">
+
+            <input type="text" id="sos-localizacao" placeholder="Localização">
+
+            <textarea id="sos-mensagem" placeholder="Descreva a situação"></textarea>
+
+            <button class="sos-enviar" id="enviarSOS">
+                Transmitir
+            </button>
+
+            <button class="sos-fechar" id="fecharSOS">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+  
+
+</body>
+
+</html>

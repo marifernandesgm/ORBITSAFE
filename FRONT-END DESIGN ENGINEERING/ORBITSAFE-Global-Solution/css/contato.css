@@ -1,0 +1,572 @@
+/* ==================================================
+   SEÇÃO PRINCIPAL DE CONTATO
+   ================================================== */
+
+.contato{
+
+    width:100%;
+
+    padding:5rem 2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:3rem;
+}
+
+/* ==================================================
+   TÍTULO DA PÁGINA DE CONTATO
+   ================================================== */
+
+.contato__titulo{
+
+    text-align:center;
+}
+
+.contato__titulo h1{
+
+    font-size:4rem;
+
+    color:#00d2ff;
+
+    margin-bottom:1rem;
+}
+
+.contato__titulo p{
+
+    color:#ffffff;
+}
+
+/* ==================================================
+   FORMULÁRIO DE CONTATO
+   ================================================== */
+
+.contato__formulario{
+
+    width:100%;
+    max-width:600px;
+
+    background:#081528;
+
+    border:1px solid #00d2ff;
+
+    border-radius:2rem;
+
+    padding:3rem;
+}
+
+.contato__formulario form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2rem;
+}
+
+/* ==================================================
+   CAMPOS DO FORMULÁRIO
+   ================================================== */
+
+.grupo-campo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.8rem;
+}
+
+.grupo-campo label{
+
+    color:#ffffff;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea{
+
+    padding:1.2rem;
+
+    border:1px solid #334155;
+
+    border-radius:.8rem;
+
+    background:#0b1d38;
+
+    color:#ffffff;
+}
+
+/* ==================================================
+   VALIDAÇÃO VISUAL DOS CAMPOS
+   ================================================== */
+
+input:valid,
+textarea:valid{
+
+    border:2px solid #046104;
+}
+
+input:invalid,
+textarea:invalid{
+
+    border:1px solid #e28484;
+}
+
+/* ==================================================
+   BOTÃO DE ENVIO DO FORMULÁRIO
+   ================================================== */
+
+.btn-principal{
+
+    padding:1.5rem;
+
+    border:none;
+
+    border-radius:1rem;
+
+    background:#00d2ff;
+
+    color:#000;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.btn-principal:hover{
+
+    background:#32c7f0;
+}
+
+/* ==================================================
+   RESPONSIVIDADE PARA CELULARES PEQUENOS
+   ================================================== */
+
+@media (min-width:320px) and (max-width:425px){
+
+    .contato__titulo h1{
+
+        font-size:3rem;
+    }
+
+    .contato__formulario{
+
+        padding:2rem;
+    }
+
+}
+
+/* ==================================================
+   BOTÃO FLUTUANTE SOS
+   ================================================== */
+
+.sos-btn{
+
+    position:fixed;
+
+    bottom:25px;
+
+    left:25px;
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ff3333;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    z-index:9999;
+
+}
+
+/* ==================================================
+   MODAL DE EMERGÊNCIA SOS
+   ================================================== */
+
+.sos-modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.8);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:10000;
+
+}
+
+/* ==================================================
+   CONTEÚDO INTERNO DO MODAL SOS
+   ================================================== */
+
+.sos-conteudo{
+
+    width:400px;
+
+    background:#07142e;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.sos-conteudo input,
+.sos-conteudo textarea{
+
+    padding:12px;
+
+}
+
+/* ==================================================
+   BOTÃO DE ENVIO DO ALERTA SOS
+   ================================================== */
+
+.sos-enviar{
+
+    background:#00cfff;
+
+    border:none;
+
+    padding:12px;
+
+    cursor:pointer;
+
+}
+
+/* ==================================================
+   BOTÃO DE FECHAMENTO DO MODAL SOS
+   ================================================== */
+
+.sos-fechar{
+
+    background:#ff3333;
+
+    border:none;
+
+    padding:12px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+/* ==================================================
+   RESPONSIVIDADE GERAL PARA TELAS MENORES
+   ================================================== */
+
+@media(max-width:600px){
+
+    html{
+
+        font-size:50%;
+
+    }
+
+    .contato{
+
+        padding:4rem 1rem;
+
+    }
+
+    .contato__titulo h1{
+
+        font-size:3.5rem;
+
+    }
+
+    .contato__titulo p{
+
+        line-height:1.7;
+
+    }
+
+    .contato__formulario{
+
+        width:95%;
+
+        padding:2rem;
+
+    }
+
+    .grupo-campo input,
+    .grupo-campo select,
+    .grupo-campo textarea{
+
+        padding:1rem;
+
+    }
+
+    .btn-principal{
+
+        padding:1.3rem;
+
+    }
+
+}
+
+/* ==================================================
+   EFEITO DE FOCO NOS CAMPOS DO FORMULÁRIO
+   ================================================== */
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus{
+
+    outline:none;
+
+    border:1px solid #00d2ff;
+
+}
+
+/* ==================================================
+   EFEITO VISUAL NO FORMULÁRIO
+   ================================================== */
+
+.contato__formulario{
+
+    transition:.4s;
+
+}
+
+.contato__formulario:hover{
+
+    box-shadow:
+    0 0 30px rgba(0,210,255,.2);
+
+}
+
+/* ==================================================
+   EFEITOS VISUAIS DO BOTÃO PRINCIPAL
+   ================================================== */
+
+.btn-principal{
+
+    transition:.3s;
+
+}
+
+.btn-principal:hover{
+
+    box-shadow:
+    0 0 20px rgba(0,210,255,.4);
+
+}
+
+/* ==================================================
+   ESTILIZAÇÃO DOS CAMPOS DO MODAL SOS
+   ================================================== */
+
+.sos-conteudo input,
+.sos-conteudo textarea{
+
+    background:#0b1d38;
+
+    border:1px solid #334155;
+
+    color:white;
+
+    border-radius:1rem;
+
+}
+
+.sos-conteudo input:focus,
+.sos-conteudo textarea:focus{
+
+    outline:none;
+
+    border:1px solid #00cfff;
+
+}
+
+/* ==================================================
+   ESTILIZAÇÃO DO BOTÃO ENVIAR SOS
+   ================================================== */
+
+.sos-enviar{
+
+    border-radius:1rem;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.sos-enviar:hover{
+
+    background:#32d8ff;
+
+}
+
+/* ==================================================
+   ESTILIZAÇÃO DO BOTÃO FECHAR SOS
+   ================================================== */
+
+.sos-fechar{
+
+    border-radius:1rem;
+
+    font-weight:bold;
+
+}
+
+/* ==================================================
+   BOTÃO SCROLL
+================================================== */
+
+html body #scrollTopBtn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+html body #scrollTopBtn:hover {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 0 15px rgba(0,207,255,0.4);
+}
+
+/* ==================================================
+   ESTILO PADRÃO DO BOTÃO HAMBÚRGUER
+================================================== */
+.cabecalho__hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    color: #00d2ff; 
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cabecalho__hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* ==================================================
+   RESPONSIVIDADE DO MENU HAMBÚRGUER
+================================================== */
+@media (max-width: 900px) {
+    .cabecalho__hamburger {
+        display: block;
+    }
+
+    /* Modifica a barra de navegação para manter o alinhamento com o botão */
+    .cabecalho__navbar {
+        width: 90%;
+        padding: 1.5rem 3rem;
+        position: relative; 
+    }
+
+    /* Transforma a lista horizontal em um menu suspenso oculto */
+    .cabecalho__lista {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(7, 20, 46, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 207, 255, 0.2);
+        border-radius: 2rem;
+        padding: 3rem;
+        gap: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    /* classe ativada quando clicada, mostra o menu */
+    .cabecalho__lista.active {
+        display: flex;
+    }
+}
+
+/* ==================================================
+   RESPONSIVIDADE GERAL PARA TELAS MENORES
+================================================== */
+@media(max-width:600px){
+    html{
+        font-size:50%;
+    }
+
+    .contato{
+        padding: 4rem 1rem;
+    }
+
+    .contato__titulo h1{
+        font-size: 3.5rem;
+    }
+
+    .contato__titulo p{
+        line-height: 1.7;
+    }
+
+    .contato__formulario{
+        width: 95%;
+        padding: 2rem;
+    }
+
+    .grupo-campo input,
+    .grupo-campo select,
+    .grupo-campo textarea{
+        padding: 1rem;
+    }
+
+    .btn-principal{
+        padding: 1.3rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVIDADE PARA CELULARES PEQUENOS E MODAL SOS (Até 480px)
+================================================== */
+@media(max-width:480px){
+    .contato__titulo h1{
+        font-size: 3rem;
+    }
+
+    .contato__formulario{
+        padding: 2rem;
+    }
+
+    .sos-conteudo{
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .sos-btn{
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+}

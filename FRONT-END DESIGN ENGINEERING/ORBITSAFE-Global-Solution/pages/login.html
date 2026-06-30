@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrbitSafe - Autenticação</title>
+    <link class="css-page" rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav class="cabecalho__navbar">
+            <div class="cabecalho__logo">
+                <img src="../assets/logo.png" alt="OrbitSafe Logo">
+            </div>
+
+            <button class="cabecalho__hamburger">☰</button>
+
+            <ul class="cabecalho__lista">
+                <li><a href="../index.html" class="cabecalho__link">Home</a></li>
+                <li><a href="sobre.html" class="cabecalho__link">Sobre</a></li>
+                <li><a href="monitoramento.html" class="cabecalho__link">Monitoramento</a></li>
+                <li><a href="login.html" class="cabecalho__link">Dashboard</a></li>
+                <li><a href="faq.html" class="cabecalho__link">FAQ</a></li>
+                <li><a href="contato.html" class="cabecalho__link">Contato</a></li>
+                <li><a href="integrantes.html" class="cabecalho__link">Integrantes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="auth-wrapper">
+
+        <div class="auth-header">
+            <h1 class="auth-header__title">DASHBOARD</h1>
+            <p class="auth-header__subtitle">Apenas colaboradores e serviços de segurança possuem acesso ao dashboard
+                para melhor monitoramento.</p>
+        </div>
+
+        <main class="auth-container">
+
+            <section class="auth-card">
+                <h2>LOGIN COLABORADOR </h2>
+                <form id="formLogin">
+                    <div class="form-group">
+                        <label for="loginUsuario">Usuário</label>
+                        <input type="text" id="loginUsuario" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginSenha">Senha</label>
+                        <input type="password" id="loginSenha" required>
+                    </div>
+                    <button type="submit" class="btn-auth">Autenticar</button>
+                    <div id="msgErroLogin" class="msg-feedback erro">❌ Usuário ou senha incorretos.</div>
+                </form>
+            </section>
+
+            <section class="auth-card">
+                <h2>Cadastrar Colaborador</h2>
+                <form id="formCadastro">
+                    <div class="form-group">
+                        <label for="cadUsuario">Definir Usuário</label>
+                        <input type="text" id="cadUsuario" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cadEmail">E-mail Corporativo</label>
+                        <input type="email" id="cadEmail" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cadSenha">Definir Senha</label>
+                        <input type="password" id="cadSenha" required>
+                    </div>
+                    <button type="submit" class="btn-auth btn-cadastro">Cadastrar Credenciais</button>
+                    <div id="msgSucessoCad" class="msg-feedback sucesso">Cadastro realizado com sucesso!</div>
+                    <div id="msgErroCad" class="msg-feedback erro">❌ Usuário já existente no sistema.</div>
+                </form>
+            </section>
+
+        </main>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

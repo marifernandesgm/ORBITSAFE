@@ -1,0 +1,788 @@
+/* ==========================================
+   RESET GLOBAL
+========================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   VARIÁVEIS GLOBAIS
+========================================== */
+:root{
+    --bg-dark:#020617;
+    --bg-card:#07142e;
+    --primary:#00cfff;
+    --text-main:#ffffff;
+    --titulo-main:5rem;
+    --sub-titulo:2.5rem;
+}
+
+/* ==========================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+========================================== */
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:2rem;
+    font-family:'Segoe UI',sans-serif;
+    background-image:
+    linear-gradient(
+        135deg,
+        #020617,
+        #03152e,
+        #07142e
+    );
+    color:var(--text-main);
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   CABEÇALHO E MENU DE NAVEGAÇÃO
+========================================== */
+.cabecalho{
+    width:100%;
+    padding:2rem;
+}
+
+.cabecalho__navbar{
+    width:95%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem 4rem;
+    background-color:rgba(255,255,255,.05);
+    border-radius:3rem;
+    box-shadow:0 0 20px rgba(0,207,255,.15);
+}
+
+.cabecalho__logo img{
+    height:8rem;
+    border-radius:1rem;
+    box-shadow:0 0 20px rgba(0,207,255,.5);
+}
+
+.cabecalho__lista{
+    display:flex;
+    list-style:none;
+    gap:4rem;
+}
+
+.cabecalho__link{
+    text-decoration:none;
+    color:white;
+    transition:.4s;
+}
+
+.cabecalho__link:hover{
+    color:var(--primary);
+}
+
+/* ==========================================
+   CONTAINER PRINCIPAL DA PÁGINA
+========================================== */
+.container-monitoramento{
+    width:90%;
+    margin:auto;
+    padding:8rem 0;
+}
+
+/* ==========================================
+   TÍTULO PRINCIPAL
+========================================== */
+.titulo-central{
+    text-align:center;
+    margin-bottom:6rem;
+}
+
+.titulo-central h1{
+    font-size:var(--titulo-main);
+    margin-bottom:2rem;
+    text-shadow:0 0 20px rgba(0,207,255,.4);
+}
+
+.titulo-central p{
+    color:#d7d7d7;
+}
+
+/* ==========================================
+   CARDS DE INDICADORES
+========================================== */
+.cards-indicadores{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:3rem;
+    margin-bottom:6rem;
+}
+
+.card{
+    background-color:rgba(255,255,255,.05);
+    padding:4rem;
+    border-radius:3rem;
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+    transition:.5s;
+}
+
+.card:hover{
+    box-shadow:0 0 35px rgba(0,207,255,.25);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:2rem;
+}
+
+.numero{
+    font-size:3rem;
+    font-weight:bold;
+    margin-bottom:1rem;
+}
+
+.status{
+    color:#d7d7d7;
+}
+
+/* ==========================================
+   GRADE PRINCIPAL DO PAINEL
+========================================== */
+.painel-grade{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    margin-bottom: 6rem;
+}
+
+/* ==========================================
+   BLOCO DO MAPA / RADAR
+========================================== */
+.bloco-mapa{
+    background-color:rgba(255,255,255,.05);
+    padding:4rem;
+    border-radius:3rem;
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+}
+
+.bloco-mapa h2{
+    color:var(--primary);
+    margin-bottom:3rem;
+}
+
+/* ==========================================
+   ÁREA VISUAL DO RADAR
+========================================== */
+.mapa-ficticio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.radar-container{
+    width:350px;
+    height:350px;
+    border:2px solid rgba(0,207,255,.4);
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ==========================================
+   ANÉIS DO RADAR
+========================================== */
+.radar-ring{
+    position:absolute;
+    border:1px solid rgba(0,207,255,.25);
+    border-radius:50%;
+}
+
+.radar-ring:nth-child(1){
+    width:100px;
+    height:100px;
+    top:125px;
+    left:125px;
+}
+
+.radar-ring:nth-child(2){
+    width:200px;
+    height:200px;
+    top:75px;
+    left:75px;
+}
+
+.radar-ring:nth-child(3){
+    width:300px;
+    height:300px;
+    top:25px;
+    left:25px;
+}
+
+/* ==========================================
+   EIXOS DO RADAR
+========================================== */
+.radar-axis-h{
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:rgba(0,207,255,.2);
+    top:50%;
+}
+
+.radar-axis-v{
+    position:absolute;
+    width:1px;
+    height:100%;
+    background:rgba(0,207,255,.2);
+    left:50%;
+}
+
+/* ==========================================
+   FEIXE GIRATÓRIO DO RADAR
+========================================== */
+.radar-sweep{
+    position:absolute;
+    width:50%;
+    height:2px;
+    background:#00cfff;
+    top:50%;
+    left:50%;
+    transform-origin:left center;
+    animation:radar 4s linear infinite;
+    box-shadow:0 0 20px #00cfff;
+}
+
+/* ==========================================
+   ANIMAÇÃO DO RADAR
+========================================== */
+@keyframes radar{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+
+/* ==========================================
+   BLOCO DE OCORRÊNCIAS E ALERTAS
+========================================== */
+.bloco-ocorrencias{
+    background-color:rgba(255,255,255,.05);
+    padding:4rem;
+    border-radius:3rem;
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+}
+
+.bloco-ocorrencias h2{
+    color:var(--primary);
+    margin-bottom:3rem;
+}
+
+/* ==========================================
+   LISTA DE ALERTAS
+========================================== */
+.lista-alertas{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.alerta{
+    padding:3rem;
+    border-radius:2rem;
+    color:white;
+}
+
+/* ==========================================
+   NÍVEIS DE ALERTA
+========================================== */
+.critico{
+    background-color:#4a0d0d;
+    border-left:6px solid red;
+}
+
+.moderado{
+    background-color:#4d3a00;
+    border-left:6px solid orange;
+}
+
+.informativo{
+    background-color:#08243f;
+    border-left:6px solid #00cfff;
+}
+
+/* ==========================================
+   ESTILIZAÇÃO DO PARÁGRAFO DE DETALHES (SATÉLITES)
+========================================== */
+.texto-satelite {
+    text-align: center;         
+    max-width: 850px;           
+    margin: 4rem auto 0 auto;   
+    line-height: 1.6;           
+    color: #e2e8f0;             
+}
+
+/* ==========================================
+   PAINEL DE STATUS ORBITAL
+========================================== */
+.painel-status-orbital {
+    margin-bottom: 6rem;
+}
+
+.painel-status-orbital h2 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-shadow: 0 0 15px rgba(0,207,255,0.3);
+}
+
+.orbita-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.satelite-status {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0,207,255,0.15);
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.satelite-status::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00cfff, transparent);
+    animation: scanLine 3s linear infinite;
+}
+
+@keyframes scanLine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.satelite-status:hover {
+    box-shadow: 0 0 30px rgba(0,207,255,0.2);
+    transform: translateY(-5px);
+    border-color: rgba(0,207,255,0.4);
+}
+
+.satelite-icone {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: floatSat 3s ease-in-out infinite;
+}
+
+@keyframes floatSat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.satelite-status h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.orbita-info {
+    color: #94a3b8;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge-orbital {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.badge-orbital.online {
+    background: rgba(0,207,100,0.15);
+    color: #00ff7f;
+    border: 1px solid rgba(0,207,100,0.3);
+}
+
+.badge-orbital.manutencao {
+    background: rgba(255,170,0,0.15);
+    color: #ffaa00;
+    border: 1px solid rgba(255,170,0,0.3);
+}
+
+/* ==========================================
+   PAINEL DE TELEMETRIA
+========================================== */
+.painel-telemetria {
+    margin-bottom: 6rem;
+}
+
+.painel-telemetria h2 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-shadow: 0 0 15px rgba(0,207,255,0.3);
+}
+
+.telemetria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.telemetria-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0,207,255,0.1);
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.telemetria-item:hover {
+    box-shadow: 0 0 25px rgba(0,207,255,0.15);
+    transform: translateY(-4px);
+}
+
+.telemetria-icone {
+    font-size: 3.5rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.telemetria-item h4 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 8px;
+    background: #1e293b;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.barra-preenchida {
+    height: 100%;
+    background: linear-gradient(90deg, #00cfff, #38bdf8);
+    border-radius: 1rem;
+    transition: width 1.5s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 0 8px rgba(0,207,255,0.4);
+}
+
+.barra-temp {
+    background: linear-gradient(90deg, #22d3ee, #06b6d4) !important;
+}
+
+.telemetria-item p {
+    color: #94a3b8;
+    font-size: 1.4rem;
+}
+
+/* ==========================================
+   PAINEL DE COBERTURA GLOBAL
+========================================== */
+.painel-cobertura-global {
+    margin-bottom: 6rem;
+}
+
+.painel-cobertura-global h2 {
+    color: var(--primary);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-shadow: 0 0 15px rgba(0,207,255,0.3);
+}
+
+.cobertura-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.cobertura-item {
+    text-align: center;
+    transition: 0.4s;
+}
+
+.cobertura-item:hover {
+    transform: translateY(-5px);
+}
+
+.cobertura-circulo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+}
+
+.cobertura-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    filter: drop-shadow(0 0 6px rgba(0,207,255,0.3));
+}
+
+.cobertura-valor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.cobertura-item p {
+    color: #d7d7d7;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+.rodape{
+    margin-top:8rem;
+    padding:4rem;
+    text-align:center;
+    border-top:1px solid rgba(0,207,255,.15);
+}
+
+/* ==================================================
+   BOTÃO SCROLL
+================================================== */
+
+html body #scrollTopBtn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+html body #scrollTopBtn:hover {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 0 15px rgba(0,207,255,0.4);
+}
+
+/* ==========================================
+   ESTILO PADRÃO DO BOTÃO HAMBÚRGUER (PC/DESKTOP)
+========================================== */
+.cabecalho__hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--primary); 
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cabecalho__hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   RESPONSIVIDADE DO MENU HAMBÚRGUER 
+========================================== */
+@media (max-width: 900px) {
+    /* Exibe o botão de três listras (☰) */
+    .cabecalho__hamburger {
+        display: block;
+    }
+
+    /* Modifica a barra de navegação para manter o alinhamento com o botão */
+    .cabecalho__navbar {
+        width: 90%;
+        padding: 1.5rem 3rem;
+        position: relative; 
+        flex-direction: row; 
+        gap: 0;
+    }
+
+    /* Transforma a lista horizontal em um menu suspenso oculto */
+    .cabecalho__lista {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(7, 20, 46, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 207, 255, 0.2);
+        border-radius: 2rem;
+        padding: 3rem;
+        gap: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    /* CLASSE ATIVADA PELO JAVASCRIPT: Quando clicado, mostra o menu */
+    .cabecalho__lista.active {
+        display: flex;
+    }
+
+    /* Suas configurações originais do painel de monitoramento para tablets */
+    .cards-indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-grade {
+        grid-template-columns: 1fr;
+    }
+
+    .radar-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .texto-satelite {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .orbita-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .telemetria-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cobertura-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ==========================================
+   RESPONSIVIDADE GERAL PARA CELULARES 
+========================================== */
+@media(max-width:600px){
+    html {
+        font-size: 50%;
+    }
+
+    .cabecalho {
+        padding: 1rem;
+    }
+
+    .titulo-central h1 {
+        font-size: 3.5rem;
+    }
+
+    .container-monitoramento {
+        width: 95%;
+        padding: 5rem 0;
+    }
+
+    .cards-indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-grade {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .bloco-mapa,
+    .bloco-ocorrencias {
+        padding: 3rem;
+    }
+
+    .radar-container {
+        width: 230px;
+        height: 230px;
+    }
+
+    .radar-ring:nth-child(1) {
+        width: 70px;
+        height: 70px;
+        top: 80px;
+        left: 80px;
+    }
+
+    .radar-ring:nth-child(2) {
+        width: 140px;
+        height: 140px;
+        top: 45px;
+        left: 45px;
+    }
+
+    .radar-ring:nth-child(3) {
+        width: 210px;
+        height: 210px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .alerta {
+        padding: 2rem;
+    }
+
+    .rodape {
+        margin-top: 5rem;
+        padding: 3rem;
+    }
+}
+
+/* ==========================================
+   ESTILIZAÇÃO DOS CAMPOS DO SOS
+========================================== */
+.sos-conteudo input,
+.sos-conteudo textarea{
+    background:#0b1d38;
+    border:1px solid #334155;
+    color:white;
+    border-radius:1rem;
+}
+
+.sos-conteudo input:focus,
+.sos-conteudo textarea:focus{
+    outline:none;
+    border:1px solid #00cfff;
+}
+
+/* ==========================================
+   EFEITOS DOS BOTÕES SOS
+========================================== */
+.sos-enviar{
+    border-radius:1rem;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.sos-enviar:hover{
+    background:#38dfff;
+}
+
+.sos-fechar{
+    border-radius:1rem;
+    font-weight:bold;
+}
+
+/* ==========================================
+   AJUSTES FINAIS PARA TELAS PEQUENAS
+========================================== */
+@media(max-width:480px){
+    .sos-conteudo{
+        width:90%;
+        padding:2rem;
+    }
+    .sos-btn{
+        width:60px;
+        height:60px;
+        font-size:1.8rem;
+    }
+}

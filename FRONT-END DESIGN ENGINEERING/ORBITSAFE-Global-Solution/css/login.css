@@ -1,0 +1,393 @@
+/* ==================================================
+   RESET GLOBAL & VARIÁVEIS 
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #020617;
+    --bg-card: rgba(7, 20, 46, .75);
+    --primary: #00cfff;
+    --text-main: #ffffff;
+    --sub-titulo: 2.5rem;
+    --titulo-main: 8rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Camada escura de fundo padrão do projeto */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(2, 6, 23, .80), rgba(2, 6, 23, .85));
+    z-index: -1;
+}
+
+/* ==================================================
+   ESTILOS DO CABEÇALHO 
+================================================== */
+.cabecalho {
+    width: 100%;
+    padding: 2rem;
+}
+
+.cabecalho__navbar {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
+    border: 1px solid rgba(0, 207, 255, .20);
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+}
+
+.cabecalho__logo img {
+    height: 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 207, 255, .5);
+}
+
+.cabecalho__lista {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.cabecalho__link {
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.cabecalho__link:hover {
+    color: var(--primary);
+}
+
+.cabecalho__hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ==================================================
+   WRAPPER PRINCIPAL 
+================================================== */
+.auth-wrapper {
+    width: 80%;
+    margin: 1.5rem auto; 
+    background-color: rgba(255, 255, 255, .05); 
+    padding: 2rem; 
+    border-radius: 3rem;
+    box-shadow: 0 0 20px rgba(0, 207, 255, .15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* ==================================================
+   TEXTOS
+================================================== */
+.auth-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem; 
+}
+
+.auth-header__title {
+    font-size: 5rem; 
+    font-weight: bold;
+    color: var(--text-main);
+    text-shadow: 0 0 20px rgba(0, 207, 255, .5); 
+    margin-bottom: 1.5rem;
+}
+
+.auth-header__subtitle {
+    text-align: center;
+    line-height: 2; 
+    color: #d7d7d7;
+    font-size: 2rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+/* ==================================================
+   CONTAINER E CARDS DE LOGIN / CADASTRO
+================================================== */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-card {
+    background-color: var(--bg-card);
+    padding: 2rem 3.5rem;
+    border-radius: 3rem;
+    border: 1px solid rgba(0, 207, 255, .15);
+    backdrop-filter: blur(10px);
+    flex: 1;
+    min-width: 300px;
+    max-width: 460px;
+    text-align: center;
+    transition: .5s;
+}
+
+.auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(0, 207, 255, .25);
+    border-color: rgba(0, 207, 255, 0.4);
+}
+
+.auth-card h2 {
+    font-size: var(--sub-titulo);
+    color: var(--primary);
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 2.2rem;
+    text-align: left;
+}
+
+.form-group label {
+    color: #d7d7d7;
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1.4rem;
+    background: rgba(2, 6, 23, 0.7);
+    border: 1px solid rgba(0, 207, 255, 0.2);
+    border-radius: 1rem;
+    color: var(--text-main);
+    font-size: 1.6rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 1.4rem;
+    background-image: linear-gradient(135deg, #00cfff, #38bdf8);
+    border: none;
+    border-radius: 5rem;
+    color: #020617;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-auth:hover {
+    box-shadow: 0 0 30px rgba(0, 207, 255, .7);
+}
+
+.btn-cadastro {
+    background: transparent;
+    background-image: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-cadastro:hover {
+    background: var(--primary);
+    color: #020617;
+}
+
+.msg-feedback {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    display: none;
+}
+.erro { color: #ff4444; }
+.sucesso { color: #00ff88; }
+
+/* ==================================================
+   BOTÃO VOLTAR 
+================================================== */
+.btn-voltar-container {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 1px solid rgba(0, 207, 255, 0.2);
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 5rem;
+    transition: .4s;
+}
+
+.btn-voltar:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.2);
+}
+
+/* ==================================================
+   BOTÃO SCROLL
+================================================== */
+
+html body #scrollTopBtn {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+html body #scrollTopBtn:hover {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 0 15px rgba(0,207,255,0.4);
+}
+
+/* ==================================================
+   RESPONSIVIDADE
+================================================== */
+
+/* Dispositivos Médios (Tablets e telas até 900px) */
+@media (max-width: 900px) {
+    .cabecalho {
+        position: relative;
+        z-index: 999999 !important; 
+    }
+
+    .cabecalho__hamburger {
+        display: block;
+    }
+
+    .cabecalho__navbar {
+        width: 90%;
+        position: relative; 
+        z-index: 999999 !important;
+    }
+
+    .cabecalho__lista {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #07142e !important; 
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 207, 255, 0.2);
+        border-radius: 2rem;
+        padding: 3rem;
+        gap: 2.5rem;
+        z-index: 999999 !important; 
+    }
+
+    .cabecalho__lista.active {
+        display: flex;
+    }
+
+    .auth-wrapper {
+        width: 90%;
+        padding: 3rem 2rem;
+        margin: 2rem auto;
+        position: relative;
+        z-index: 1; 
+    }
+
+    .auth-header__title {
+        font-size: 4rem;
+    }
+
+    .auth-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .auth-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 2.5rem 2rem;
+    }
+}
+
+/* Dispositivos Pequenos (Celulares até 480px) */
+@media (max-width: 480px) {
+    .auth-wrapper {
+        width: 95%;
+        padding: 2rem 1.5rem;
+    }
+
+    .auth-header__title {
+        font-size: 3.2rem; 
+        margin-bottom: 1rem;
+    }
+
+    .auth-header__subtitle {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .auth-card h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+        font-size: 1.3rem;
+    }
+
+    .form-group input {
+        font-size: 1.3rem;
+        padding: 0.8rem;
+    }
+
+    .btn-auth {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .btn-voltar {
+        font-size: 1.4rem;
+        padding: 1.2rem 3rem;
+    }
+}
