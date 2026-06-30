@@ -23,7 +23,7 @@ O projeto contempla:
 
 ---
 
-## OBEJETIVO
+## OBJETIVO
 
 O objetivo deste projeto é desenvolver uma estrutura de banco de dados relacional capaz de suportar o funcionamento do sistema OrbitSafe, garantindo organização, integridade e consistência das informações relacionadas ao monitoramento de emergências, dispositivos, usuários e comunicação via satélites.
 
