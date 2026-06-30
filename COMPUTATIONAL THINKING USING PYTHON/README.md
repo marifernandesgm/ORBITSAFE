@@ -1,12 +1,12 @@
-
-# 🛰️ OrbitSafe — Sistema Inteligente de Monitoramento e Emergências Climáticas
+# 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
 > Global Solution — Turma 1TDSPH (2026)
+> Disciplina: Computational Thinking Using Python  
 > Sistema desenvolvido em Python para simular o gerenciamento de emergências ambientais, monitoramento climático e conectividade via satélites.
 
 ---
 
-## 📌 Descrição do Projeto
+## DESCRIÇÃO DO PROJETO
 
 O **OrbitSafe** é uma aplicação desenvolvida em **Python** com o objetivo de simular um sistema inteligente de monitoramento de desastres ambientais e suporte à tomada de decisões durante situações de emergência.
 
@@ -24,13 +24,13 @@ O sistema possui um menu interativo executado no terminal e contempla as seguint
 
 ---
 
-# 🎯 Objetivo
+## OBEJTIVO
 
 O OrbitSafe demonstra como a programação em Python pode ser utilizada para simular sistemas de apoio à gestão de desastres naturais, integrando cadastro de usuários, monitoramento climático, análise de riscos, comunicação via satélite e geração de relatórios em um único sistema.
 
 ---
 
-# 🚀 Tecnologias Utilizadas
+## TECNOLOGIAS UTILIZADAS
 
 O sistema foi desenvolvido utilizando apenas recursos da linguagem Python, aplicando os principais conceitos estudados na disciplina.
 
@@ -46,9 +46,9 @@ O sistema foi desenvolvido utilizando apenas recursos da linguagem Python, aplic
 
 ---
 
-# ⚙️ Funcionalidades Desenvolvidas
+## FUNCIONALIDADES DESENVOLVIDAS
 
-### 📋 Cadastro de Usuários
+### Cadastro de Usuários
 
 Permite cadastrar usuários informando:
 
@@ -61,7 +61,7 @@ Todos os campos passam por validações antes de serem armazenados.
 
 ---
 
-### 🚨 Registro de Emergências
+### Registro de Emergências
 
 Permite registrar ocorrências ambientais classificando:
 
@@ -73,7 +73,7 @@ O sistema ainda informa automaticamente qual equipe seria acionada de acordo com
 
 ---
 
-### 🌦 Consulta de Risco Climático
+### Consulta de Risco Climático
 
 Recebe informações climáticas da região:
 
@@ -89,7 +89,7 @@ Com esses dados é calculado automaticamente um nível de risco:
 
 ---
 
-### 📡 Consulta de Conectividade
+### Consulta de Conectividade
 
 Simula o monitoramento da infraestrutura de comunicação.
 
@@ -97,7 +97,7 @@ Caso a internet esteja indisponível, o sistema realiza a simulação do acionam
 
 ---
 
-### 🔥 Monitoramento de Queimadas
+### Monitoramento de Queimadas
 
 Realiza uma simulação dos focos de incêndio em cinco importantes biomas brasileiros:
 
@@ -111,7 +111,7 @@ Cada região recebe uma classificação de risco conforme a quantidade de focos 
 
 ---
 
-### 📊 Relatórios
+### Relatórios
 
 Apresenta um resumo contendo:
 
@@ -122,36 +122,36 @@ Apresenta um resumo contendo:
 
 ---
 
-# 📁 Estrutura do Projeto
+# Estrutura do Projeto
 
-```text
+<pre>
 ORBITSAFE_PYTHON/
 │
 ├── OrbitSafeGS.py          # Código principal do sistema
 ├── OrbitSafePY.pdf
 └── README.md
-```
+</pre>
 
 ---
 
-# 💻 Conceitos de Python Aplicados
+## CONCEITOS APLICADOS
 
 Durante o desenvolvimento foram utilizados diversos conceitos fundamentais da linguagem:
 
-* Modularização através de funções
-* Listas para armazenamento dos dados
-* Dicionários para representação de usuários e emergências
-* Estruturas de repetição
-* Estruturas condicionais
-* Tratamento de exceções (`try`/`except`)
-* Validação de entrada do usuário
-* Utilização de parâmetros e retorno de funções
-* Organização do código em blocos bem documentados
-* Comentários utilizando DocStrings
+* Modularização através de funções;
+* Listas para armazenamento dos dados;
+* Dicionários para representação de usuários e emergências;
+* Estruturas de repetição;
+* Estruturas condicionais;
+* Tratamento de exceções (`try`/`except`);
+* Validação de entrada do usuário;
+* Utilização de parâmetros e retorno de funções;
+* Organização do código em blocos bem documentados;
+* Comentários utilizando DocStrings.
 
 ---
 
-# ▶️ Como Executar
+## COMO EXECUTAR
 
 1. Clone este repositório:
 
@@ -179,28 +179,24 @@ python3 OrbitSafeGS.py
 
 ---
 
-# 👥 Integrantes
+## INTEGRANTES & AUTORES
 
-**Isabelle Ferreira Neri Feitoza** — RM 573507
+Abaixo encontram-se os detalhes dos desenvolvedores responsáveis pela arquitetura e engenharia do OrbitSafe:
 
-**Marina Fernandes Gomes Mesquita** — RM 571265
-
-**Milena Silva Conegin** — RM 568923
-
-Turma: **1TDSPH**
-
-FIAP — Global Solution 2026
-
----
-
-# 📞 Contato
-
-Em caso de dúvidas sobre o projeto, entre em contato com a equipe de desenvolvimento através do repositório oficial do OrbitSafe.
+*Isabelle Ferreira Neri Feitoza — RM 573507 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/isabelle-ferreira-8844593ab/) | [GitHub](https://github.com/isabelleferreiraa)
+*Milena Silva Conegin — RM 568923 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/milena-conegin-996b22269?utm_source=share_via&utm_content=profile&utm_medium=member_ios) | [GitHub](https://github.com/MilenaConegin)
+* Marina Fernandes Gomes Mesquita — RM 571265 (DESENVOLVEDORA FULLSTACK) - Turma: 1TDSPH
+  * [LinkedIn](https://www.linkedin.com/in/marifernandesgm-58460a40a) | [GitHub](https://github.com/marifernandesgm)
 
 ---
 
-**OrbitSafe 2026 — FIAP Global Solution. Todos os direitos reservados.**
+## CONTATO
+
+Para dúvidas, suporte técnico ou informações sobre o ecossistema OrbitSafe, entre em contato com a equipe de desenvolvimento através dos canais abaixo:
+
+* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/marifernandesgm/ORBITSAFE.git)
 
 ---
-
-Esse README mantém a mesma identidade visual do projeto Front-End, mas agora está totalmente adaptado às funcionalidades reais do sistema em Python.
+OrbitSafe 2026 — Fiap Global Solution. Todos os direitos reservados.
