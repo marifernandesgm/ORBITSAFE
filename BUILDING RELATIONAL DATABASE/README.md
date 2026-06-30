@@ -1,6 +1,6 @@
 # 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
-> Global Solution — Turma 1TDSPH (2026)
+> Global Solution — Turma 1TDSPH (2026)  
 > Disciplina: Building Relational DataBase   
 > Projeto desenvolvido para a disciplina de **Building Relational Database (BRD)**, contemplando a modelagem conceitual, modelo relacional e implementação do banco de dados Oracle para o sistema OrbitSafe.
 
@@ -23,13 +23,13 @@ O projeto contempla:
 
 ---
 
-# OBEJETIVO
+## OBEJETIVO
 
 O objetivo deste projeto é desenvolver uma estrutura de banco de dados relacional capaz de suportar o funcionamento do sistema OrbitSafe, garantindo organização, integridade e consistência das informações relacionadas ao monitoramento de emergências, dispositivos, usuários e comunicação via satélites.
 
 ---
 
-# TECNOLOGIAS UTILIZADAS
+## TECNOLOGIAS UTILIZADAS
 
 O banco de dados foi desenvolvido utilizando as tecnologias e ferramentas estudadas na disciplina.
 
