@@ -1,0 +1,531 @@
+/* ==========================================
+   RESET GLOBAL
+========================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   VARIÁVEIS GLOBAIS
+========================================== */
+:root{
+    --bg-dark:#020617;
+    --bg-card:#07142e;
+    --primary:#00cfff;
+    --text-main:#ffffff;
+    --titulo-main:5rem;
+    --sub-titulo:2.5rem;
+}
+
+/* ==========================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+========================================== */
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size:2rem;
+    font-family:'Segoe UI',sans-serif;
+    background-image:
+    linear-gradient(
+        135deg,
+        #020617,
+        #03152e,
+        #07142e
+    );
+    color:var(--text-main);
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   CABEÇALHO E MENU DE NAVEGAÇÃO
+========================================== */
+.cabecalho{
+    width:100%;
+    padding:2rem;
+}
+
+.cabecalho__navbar{
+    width:95%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem 4rem;
+    background-color:rgba(255,255,255,.05);
+    border-radius:3rem;
+    box-shadow:0 0 20px rgba(0,207,255,.15);
+}
+
+.cabecalho__logo img{
+    height:8rem;
+    border-radius:1rem;
+    box-shadow:0 0 20px rgba(0,207,255,.5);
+}
+
+.cabecalho__lista{
+    display:flex;
+    list-style:none;
+    gap:4rem;
+}
+
+.cabecalho__link{
+    text-decoration:none;
+    color:white;
+    transition:.4s;
+}
+
+.cabecalho__link:hover{
+    color:var(--primary);
+}
+
+/* ==========================================
+   CONTAINER PRINCIPAL DA PÁGINA
+========================================== */
+.container-monitoramento{
+    width:90%;
+    margin:auto;
+    padding:8rem 0;
+}
+
+/* ==========================================
+   TÍTULO PRINCIPAL
+========================================== */
+.titulo-central{
+    text-align:center;
+    margin-bottom:6rem;
+}
+
+.titulo-central h1{
+    font-size:var(--titulo-main);
+    margin-bottom:2rem;
+    text-shadow:0 0 20px rgba(0,207,255,.4);
+}
+
+.titulo-central p{
+    color:#d7d7d7;
+}
+
+/* ==========================================
+   CARDS DE INDICADORES
+========================================== */
+.cards-indicadores{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:3rem;
+    margin-bottom:6rem;
+}
+
+.card{
+    background-color:rgba(255,255,255,.05);
+    padding:4rem;
+    border-radius:3rem;
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+    transition:.5s;
+}
+
+.card:hover{
+    box-shadow:0 0 35px rgba(0,207,255,.25);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:2rem;
+}
+
+.numero{
+    font-size:3rem;
+    font-weight:bold;
+    margin-bottom:1rem;
+}
+
+.status{
+    color:#d7d7d7;
+}
+
+/* ==========================================
+   GRADE PRINCIPAL DO PAINEL
+========================================== */
+.painel-grade{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:4rem;
+    margin-bottom: 6rem;
+}
+
+/* ==========================================
+   BLOCO DO MAPA / RADAR
+========================================== */
+.bloco-mapa{
+    background-color:rgba(255,255,255,.05);
+    padding:4rem;
+    border-radius:3rem;
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+}
+
+.bloco-mapa h2{
+    color:var(--primary);
+    margin-bottom:3rem;
+}
+
+/* ==========================================
+   ÁREA VISUAL DO RADAR
+========================================== */
+.mapa-ficticio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.radar-container{
+    width:350px;
+    height:350px;
+    border:2px solid rgba(0,207,255,.4);
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+}
+
+/* ==========================================
+   ANÉIS DO RADAR
+========================================== */
+.radar-ring{
+    position:absolute;
+    border:1px solid rgba(0,207,255,.25);
+    border-radius:50%;
+}
+
+.radar-ring:nth-child(1){
+    width:100px;
+    height:100px;
+    top:125px;
+    left:125px;
+}
+
+.radar-ring:nth-child(2){
+    width:200px;
+    height:200px;
+    top:75px;
+    left:75px;
+}
+
+.radar-ring:nth-child(3){
+    width:300px;
+    height:300px;
+    top:25px;
+    left:25px;
+}
+
+/* ==========================================
+   EIXOS DO RADAR
+========================================== */
+.radar-axis-h{
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:rgba(0,207,255,.2);
+    top:50%;
+}
+
+.radar-axis-v{
+    position:absolute;
+    width:1px;
+    height:100%;
+    background:rgba(0,207,255,.2);
+    left:50%;
+}
+
+/* ==========================================
+   FEIXE GIRATÓRIO DO RADAR
+========================================== */
+.radar-sweep{
+    position:absolute;
+    width:50%;
+    height:2px;
+    background:#00cfff;
+    top:50%;
+    left:50%;
+    transform-origin:left center;
+    animation:radar 4s linear infinite;
+    box-shadow:0 0 20px #00cfff;
+}
+
+/* ==========================================
+   ANIMAÇÃO DO RADAR
+========================================== */
+@keyframes radar{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+
+/* ==========================================
+   BLOCO DE OCORRÊNCIAS E ALERTAS
+========================================== */
+.bloco-ocorrencias{
+    background-color:rgba(255,255,255,.05);
+    padding:4rem;
+    border-radius:3rem;
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+}
+
+.bloco-ocorrencias h2{
+    color:var(--primary);
+    margin-bottom:3rem;
+}
+
+/* ==========================================
+   LISTA DE ALERTAS
+========================================== */
+.lista-alertas{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.alerta{
+    padding:3rem;
+    border-radius:2rem;
+    color:white;
+}
+
+/* ==========================================
+   NÍVEIS DE ALERTA
+========================================== */
+.critico{
+    background-color:#4a0d0d;
+    border-left:6px solid red;
+}
+
+.moderado{
+    background-color:#4d3a00;
+    border-left:6px solid orange;
+}
+
+.informativo{
+    background-color:#08243f;
+    border-left:6px solid #00cfff;
+}
+
+/* ==========================================
+   ESTILIZAÇÃO DO PARÁGRAFO DE DETALHES (SATÉLITES)
+========================================== */
+.texto-satelite {
+    text-align: center;         
+    max-width: 850px;           
+    margin: 4rem auto 0 auto;   
+    line-height: 1.6;           
+    color: #e2e8f0;             
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+.rodape{
+    margin-top:8rem;
+    padding:4rem;
+    text-align:center;
+    border-top:1px solid rgba(0,207,255,.15);
+}
+
+/* ==========================================
+   ESTILO PADRÃO DO BOTÃO HAMBÚRGUER (PC/DESKTOP)
+========================================== */
+.cabecalho__hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--primary); 
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cabecalho__hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   RESPONSIVIDADE DO MENU HAMBÚRGUER 
+========================================== */
+@media (max-width: 900px) {
+    /* Exibe o botão de três listras (☰) */
+    .cabecalho__hamburger {
+        display: block;
+    }
+
+    /* Modifica a barra de navegação para manter o alinhamento com o botão */
+    .cabecalho__navbar {
+        width: 90%;
+        padding: 1.5rem 3rem;
+        position: relative; 
+        flex-direction: row; 
+        gap: 0;
+    }
+
+    /* Transforma a lista horizontal em um menu suspenso oculto */
+    .cabecalho__lista {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(7, 20, 46, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 207, 255, 0.2);
+        border-radius: 2rem;
+        padding: 3rem;
+        gap: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    /* CLASSE ATIVADA PELO JAVASCRIPT: Quando clicado, mostra o menu */
+    .cabecalho__lista.active {
+        display: flex;
+    }
+
+    /* Suas configurações originais do painel de monitoramento para tablets */
+    .cards-indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-grade {
+        grid-template-columns: 1fr;
+    }
+
+    .radar-container {
+        width: 280px;
+        height: 280px;
+    }
+
+    .texto-satelite {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+/* ==========================================
+   RESPONSIVIDADE GERAL PARA CELULARES 
+========================================== */
+@media(max-width:600px){
+    html {
+        font-size: 50%;
+    }
+
+    .cabecalho {
+        padding: 1rem;
+    }
+
+    .titulo-central h1 {
+        font-size: 3.5rem;
+    }
+
+    .container-monitoramento {
+        width: 95%;
+        padding: 5rem 0;
+    }
+
+    .cards-indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-grade {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .bloco-mapa,
+    .bloco-ocorrencias {
+        padding: 3rem;
+    }
+
+    .radar-container {
+        width: 230px;
+        height: 230px;
+    }
+
+    .radar-ring:nth-child(1) {
+        width: 70px;
+        height: 70px;
+        top: 80px;
+        left: 80px;
+    }
+
+    .radar-ring:nth-child(2) {
+        width: 140px;
+        height: 140px;
+        top: 45px;
+        left: 45px;
+    }
+
+    .radar-ring:nth-child(3) {
+        width: 210px;
+        height: 210px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .alerta {
+        padding: 2rem;
+    }
+
+    .rodape {
+        margin-top: 5rem;
+        padding: 3rem;
+    }
+}
+
+/* ==========================================
+   ESTILIZAÇÃO DOS CAMPOS DO SOS
+========================================== */
+.sos-conteudo input,
+.sos-conteudo textarea{
+    background:#0b1d38;
+    border:1px solid #334155;
+    color:white;
+    border-radius:1rem;
+}
+
+.sos-conteudo input:focus,
+.sos-conteudo textarea:focus{
+    outline:none;
+    border:1px solid #00cfff;
+}
+
+/* ==========================================
+   EFEITOS DOS BOTÕES SOS
+========================================== */
+.sos-enviar{
+    border-radius:1rem;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.sos-enviar:hover{
+    background:#38dfff;
+}
+
+.sos-fechar{
+    border-radius:1rem;
+    font-weight:bold;
+}
+
+/* ==========================================
+   AJUSTES FINAIS PARA TELAS PEQUENAS
+========================================== */
+@media(max-width:480px){
+    .sos-conteudo{
+        width:90%;
+        padding:2rem;
+    }
+    .sos-btn{
+        width:60px;
+        height:60px;
+        font-size:1.8rem;
+    }
+}

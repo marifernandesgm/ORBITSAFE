@@ -1,0 +1,574 @@
+/* ==========================================
+   RESET GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   VARIÁVEIS GLOBAIS
+========================================== */
+
+:root{
+
+    --bg-dark:#020617;
+    --primary:#00cfff;
+    --text-main:#ffffff;
+    --titulo-main:5rem;
+    --sub-titulo:2.5rem;
+
+}
+
+/* ==========================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+========================================== */
+
+html{
+    font-size:62.5%;
+}
+
+body{
+
+    font-size:2rem;
+    font-family:'Segoe UI',sans-serif;
+
+    background-image:
+    linear-gradient(
+        135deg,
+        #020617,
+        #03152e,
+        #07142e
+    );
+
+    color:var(--text-main);
+
+}
+
+/* ==========================================
+   CABEÇALHO E MENU DE NAVEGAÇÃO
+========================================== */
+
+.cabecalho{
+
+    width:100%;
+    padding:2rem;
+
+}
+
+.cabecalho__navbar{
+
+    width:95%;
+    margin:auto;
+
+    padding:2rem 4rem;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    background-color:rgba(255,255,255,.05);
+
+    border-radius:3rem;
+
+    box-shadow:0 0 20px rgba(0,207,255,.15);
+
+}
+
+.cabecalho__logo img{
+    height:8rem;
+}
+
+.cabecalho__lista{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:4rem;
+
+}
+
+.cabecalho__link{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.4s;
+
+}
+
+.cabecalho__link:hover{
+    color:var(--primary);
+}
+
+/* ==========================================
+   SEÇÃO PRINCIPAL DOS INTEGRANTES
+========================================== */
+
+.integrantes{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:8rem 0;
+
+}
+
+/* ==========================================
+   TÍTULO DA PÁGINA
+========================================== */
+
+.integrantes__titulo{
+
+    text-align:center;
+
+    margin-bottom:6rem;
+
+}
+
+.integrantes__titulo h1{
+
+    font-size:var(--titulo-main);
+
+    margin-bottom:2rem;
+
+}
+
+.integrantes__titulo p{
+    color:#d7d7d7;
+}
+
+/* ==========================================
+   GRID DOS CARDS DOS INTEGRANTES
+========================================== */
+
+.integrantes__container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+    gap:3rem;
+
+}
+
+/* ==========================================
+   CARD INDIVIDUAL DE CADA INTEGRANTE
+========================================== */
+
+.integrante{
+
+    background-color:rgba(255,255,255,.05);
+
+    padding:4rem;
+
+    border-radius:3rem;
+
+    text-align:center;
+
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+
+    transition:.5s;
+
+}
+
+.integrante:hover{
+    box-shadow:0 0 35px rgba(0,207,255,.25);
+}
+
+/* ==========================================
+   FOTO DO INTEGRANTE
+========================================== */
+
+.integrante img{
+
+    width:18rem;
+    height:18rem;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:2rem;
+
+}
+
+/* ==========================================
+   INFORMAÇÕES DO INTEGRANTE
+========================================== */
+
+.integrante h2{
+
+    color:var(--primary);
+
+    font-size:2.3rem;
+
+    margin-bottom:1.5rem;
+
+}
+
+.integrante p{
+
+    margin-bottom:1rem;
+
+    color:#d7d7d7;
+
+}
+
+/* ==========================================
+   LINKS (GITHUB E LINKEDIN)
+========================================== */
+
+.integrante__links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:2rem;
+
+    margin-top:2rem;
+
+}
+
+.integrante__links img{
+
+    width:5rem;
+
+    height:5rem;
+
+    border-radius:0;
+
+    transition:.4s;
+
+}
+
+.integrante__links img:hover{
+    transform:scale(1.1);
+}
+
+/* ==========================================
+   SEÇÃO DO REPOSITÓRIO GITHUB
+========================================== */
+
+.repositorio{
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:6rem auto 0 auto;
+
+    padding:4rem;
+
+    text-align:center;
+
+    background-color:rgba(255,255,255,.05);
+
+    border-radius:3rem;
+
+    box-shadow:0 0 15px rgba(0,207,255,.1);
+
+}
+
+.repositorio h2{
+
+    color:var(--primary);
+
+    font-size:3rem;
+
+    margin-bottom:2rem;
+
+}
+
+.repositorio p{
+
+    color:#d7d7d7;
+
+    margin-bottom:3rem;
+
+}
+
+/* ==========================================
+   BOTÃO DE ACESSO AO REPOSITÓRIO
+========================================== */
+
+.repositorio__botao{
+
+    display:inline-block;
+
+    padding:1.5rem 3rem;
+
+    background-color:var(--primary);
+
+    color:#020617;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    border-radius:1rem;
+
+    transition:.4s;
+
+}
+
+.repositorio__botao:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px rgba(0,207,255,.4);
+
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+.rodape{
+
+    padding:4rem;
+
+    text-align:center;
+
+    border-top:1px solid rgba(0,207,255,.15);
+
+}
+
+/* ==========================================
+   ESTILO PADRÃO DO BOTÃO HAMBÚRGUER (PC/DESKTOP)
+========================================== */
+.cabecalho__hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    color: var(--primary); 
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cabecalho__hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* ==========================================
+   RESPONSIVIDADE DO MENU HAMBÚRGUER 
+========================================== */
+@media (max-width: 900px) {
+    /* Exibe o botão de três listras (☰) */
+    .cabecalho__hamburger {
+        display: block;
+    }
+
+    /* Modifica a barra de navegação para manter o alinhamento com o botão */
+    .cabecalho__navbar {
+        width: 90%;
+        padding: 1.5rem 3rem;
+        position: relative; 
+        flex-direction: row; 
+        gap: 0;
+    }
+
+    /* Transforma a lista horizontal em um menu suspenso oculto */
+    .cabecalho__lista {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(7, 20, 46, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 207, 255, 0.2);
+        border-radius: 2rem;
+        padding: 3rem;
+        gap: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    /* CLASSE ATIVADA PELO JAVASCRIPT: Quando clicado, mostra o menu */
+    .cabecalho__lista.active {
+        display: flex;
+    }
+
+    /* Mantém os ajustes de grid originais da sua página de integrantes */
+    .integrantes__container {
+        grid-template-columns: 1fr;
+    }
+
+    .integrantes__titulo h1 {
+        font-size: 4rem;
+    }
+
+    .repositorio {
+        padding: 2.5rem;
+    }
+}
+
+/* ==========================================
+   RESPONSIVIDADE GERAL PARA CELULARES 
+========================================== */
+@media(max-width:600px){
+    html{
+        font-size:50%;
+    }
+
+    .cabecalho {
+        padding: 1rem;
+    }
+
+    .integrantes {
+        width: 95%;
+        padding: 5rem 0;
+    }
+
+    .integrantes__titulo h1{
+        font-size: 3.5rem;
+    }
+
+    .integrantes__titulo p{
+        line-height: 1.7;
+    }
+
+    .integrante{
+        padding: 3rem;
+    }
+
+    .integrante img{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .integrante h2{
+        font-size: 2rem;
+    }
+
+    .integrante__links img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .repositorio {
+        width: 95%;
+        padding: 3rem 2rem;
+    }
+
+    .repositorio h2{
+        font-size: 2.5rem;
+    }
+}
+
+/* ==========================================
+   ANIMAÇÕES E EFEITOS VISUAIS
+========================================== */
+
+.integrante{
+    transition:.4s;
+}
+
+.integrante:hover{
+    transform:translateY(-8px);
+}
+
+.integrante img{
+    transition:.4s;
+}
+
+.integrante:hover img{
+
+    box-shadow:
+    0 0 30px rgba(0,207,255,.5);
+
+}
+
+.repositorio{
+    transition:.4s;
+}
+
+.repositorio:hover{
+
+    box-shadow:
+    0 0 30px rgba(0,207,255,.25);
+
+}
+
+/* ==========================================
+   ESTILIZAÇÃO DOS CAMPOS DO SOS
+========================================== */
+
+.sos-conteudo input,
+.sos-conteudo textarea{
+
+    background:#0b1d38;
+
+    border:1px solid #334155;
+
+    border-radius:1rem;
+
+    color:white;
+
+}
+
+.sos-conteudo input:focus,
+.sos-conteudo textarea:focus{
+
+    outline:none;
+
+    border:1px solid #00cfff;
+
+}
+
+.sos-enviar{
+
+    border-radius:1rem;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.sos-enviar:hover{
+    background:#35dcff;
+}
+
+.sos-fechar{
+
+    border-radius:1rem;
+
+    font-weight:bold;
+
+}
+
+/* ==========================================
+   AJUSTES FINAIS PARA TELAS PEQUENAS
+========================================== */
+
+@media(max-width:480px){
+
+    .sos-conteudo{
+
+        width:90%;
+
+        padding:2rem;
+
+    }
+
+    .sos-btn{
+
+        width:60px;
+        height:60px;
+
+        font-size:1.8rem;
+
+    }
+
+}

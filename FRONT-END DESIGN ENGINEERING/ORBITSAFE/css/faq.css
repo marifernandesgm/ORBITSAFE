@@ -1,0 +1,461 @@
+/* ==================================================
+   RESET GLOBAL
+   Remove margens e paddings padrões do navegador
+================================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==================================================
+   VARIÁVEIS GLOBAIS
+   Cores, tamanhos e estilos reutilizados
+================================================== */
+:root{
+
+    --bg-dark:#020617;
+    --bg-card:#07142e;
+
+    --primaary:#00cfff;
+
+    --text-main:#ffffff;
+
+    --titulo-main:5rem;
+
+    --sub-titulo:2.5rem;
+
+}
+
+/* ==================================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+================================================== */
+html{
+
+    font-size:62.5%;
+
+}
+
+body{
+
+    font-size:2rem;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background-image:
+    linear-gradient(
+        135deg,
+        #020617,
+        #03152e,
+        #07142e
+    );
+
+    color:var(--text-main);
+
+    overflow-x:hidden;
+
+}
+
+/* ==================================================
+   CABEÇALHO E MENU DE NAVEGAÇÃO
+================================================== */
+.cabecalho{
+
+    width:100%;
+
+    padding:2rem;
+
+}
+
+.cabecalho__navbar{
+
+    width:95%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:2rem 4rem;
+
+    background-color:rgba(255,255,255,.05);
+
+    border-radius:3rem;
+
+    box-shadow:
+    0 0 20px rgba(0,207,255,.15);
+
+}
+
+/* ==================================================
+   LOGO DO PROJETO
+================================================== */
+.cabecalho__logo img{
+
+    height:8rem;
+
+    border-radius:1rem;
+
+    box-shadow:
+    0 0 20px rgba(0,207,255,.5);
+
+}
+
+/* ==================================================
+   LISTA DE LINKS DO MENU
+================================================== */
+.cabecalho__lista{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:4rem;
+
+}
+
+.cabecalho__link{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.4s;
+
+}
+
+.cabecalho__link:hover{
+
+    color:var(--primary);
+
+}
+
+/* ==================================================
+   CONTAINER PRINCIPAL DA FAQ
+================================================== */
+.faq{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:8rem 0;
+
+}
+
+/* ==================================================
+   TÍTULO DA PÁGINA FAQ
+================================================== */
+.faq__titulo{
+
+    text-align:center;
+
+    margin-bottom:6rem;
+
+}
+
+.faq__titulo h1{
+
+    font-size:var(--titulo-main);
+
+    margin-bottom:2rem;
+
+    text-shadow:
+    0 0 20px rgba(0,207,255,.4);
+
+}
+
+.faq__titulo p{
+
+    color:#d7d7d7;
+
+}
+
+/* ==================================================
+   CONTAINER DOS CARDS DE PERGUNTAS
+================================================== */
+.faq__container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:3rem;
+
+}
+
+/* ==================================================
+   CARD INDIVIDUAL DE PERGUNTA E RESPOSTA
+================================================== */
+.faq__card{
+
+    background-color:rgba(255,255,255,.05);
+
+    padding:4rem;
+
+    border-radius:3rem;
+
+    border-left:6px solid #00cfff;
+
+    transition:.5s;
+
+    box-shadow:
+    0 0 15px rgba(0,207,255,.1);
+
+}
+
+/* ==================================================
+   EFEITO HOVER DOS CARDS
+================================================== */
+.faq__card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 35px rgba(0,207,255,.25);
+
+}
+
+/* ==================================================
+   TÍTULO DAS PERGUNTAS
+================================================== */
+.faq__card h2{
+
+    color:var(--primary);
+
+    margin-bottom:2rem;
+
+    font-size:var(--sub-titulo);
+
+}
+
+/* ==================================================
+   TEXTO DAS RESPOSTAS
+================================================== */
+.faq__card p{
+
+    color:#d7d7d7;
+
+    line-height:1.8;
+
+}
+
+/* ==================================================
+   RODAPÉ DA PÁGINA
+================================================== */
+.rodape{
+
+    margin-top:8rem;
+
+    padding:4rem;
+
+    text-align:center;
+
+    border-top:1px solid rgba(0,207,255,.15);
+
+}
+
+/* ==================================================
+   ESTILO PADRÃO DO BOTÃO HAMBÚRGUER (PC/DESKTOP)
+================================================== */
+.cabecalho__hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    color: #00cfff; 
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cabecalho__hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* ==================================================
+   RESPONSIVIDADE DO MENU HAMBÚRGUER
+================================================== */
+@media (max-width: 900px) {
+    /* Exibe o botão de três listras (☰) */
+    .cabecalho__hamburger {
+        display: block;
+    }
+
+    /* Modifica a barra de navegação para manter o alinhamento com o botão */
+    .cabecalho__navbar {
+        width: 90%;
+        padding: 1.5rem 3rem;
+        position: relative; 
+        flex-direction: row; 
+        gap: 0;
+    }
+
+    /* Transforma a lista horizontal em um menu suspenso oculto */
+    .cabecalho__lista {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: rgba(7, 20, 46, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 207, 255, 0.2);
+        border-radius: 2rem;
+        padding: 3rem;
+        gap: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    /* classe ativada quando clicada, mostra o menu */
+    .cabecalho__lista.active {
+        display: flex;
+    }
+
+    .faq__titulo h1 {
+        font-size: 4rem;
+    }
+
+    .faq__card {
+        padding: 3rem;
+    }
+}
+
+/* ==================================================
+   RESPONSIVIDADE GERAL DA FAQ 
+================================================== */
+@media(max-width:600px){
+    html{
+        font-size:50%;
+    }
+
+    .cabecalho{
+        padding:1rem;
+    }
+
+    .faq{
+        width:95%;
+        padding:5rem 0;
+    }
+
+    .faq__titulo h1{
+        font-size:3.5rem;
+    }
+
+    .faq__titulo p{
+        line-height:1.7;
+    }
+
+    .faq__card{
+        padding:2.5rem;
+    }
+
+    .faq__card h2{
+        font-size:2rem;
+        line-height:1.5;
+    }
+
+    .faq__card p{
+        font-size:1.6rem;
+        line-height:1.8;
+    }
+}
+
+/* ==================================================
+   ANIMAÇÃO EXTRA DOS CARDS FAQ
+================================================== */
+.faq__card{
+
+    transition:.4s;
+
+}
+
+.faq__card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ==================================================
+   ESTILIZAÇÃO DOS CAMPOS DO MODAL SOS
+================================================== */
+.sos-conteudo input,
+.sos-conteudo textarea{
+
+    background:#0b1d38;
+
+    border:1px solid #334155;
+
+    border-radius:1rem;
+
+    color:white;
+
+}
+
+.sos-conteudo input:focus,
+.sos-conteudo textarea:focus{
+
+    outline:none;
+
+    border:1px solid #00cfff;
+
+}
+
+/* ==================================================
+   ESTILO E HOVER DO BOTÃO ENVIAR SOS
+================================================== */
+.sos-enviar{
+
+    border-radius:1rem;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.sos-enviar:hover{
+
+    background:#37d9ff;
+
+}
+
+/* ==================================================
+   ESTILO DO BOTÃO FECHAR SOS
+================================================== */
+.sos-fechar{
+
+    border-radius:1rem;
+
+    font-weight:bold;
+
+}
+
+/* ==================================================
+   AJUSTES EXTRAS PARA TELAS MUITO PEQUENAS
+================================================== */
+@media(max-width:480px){
+
+    .sos-conteudo{
+
+        width:90%;
+
+        padding:2rem;
+
+    }
+
+    .sos-btn{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:1.8rem;
+
+    }
+
+}
