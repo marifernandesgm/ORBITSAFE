@@ -114,7 +114,7 @@ Abaixo encontram-se os detalhes dos desenvolvedores responsáveis pela arquitetu
 
 Para dúvidas, suporte técnico ou informações sobre o ecossistema OrbitSafe, entre em contato com a equipe de desenvolvimento através dos canais abaixo:
 
-* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/isabelleferreiraa/ORBITSAFE-Global-Solution.git)
+* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/marifernandesgm/ORBITSAFE.git)
 
 ---
 OrbitSafe 2026 — Fiap Global Solution. Todos os direitos reservados.
