@@ -1,0 +1,10 @@
+/* ==========================================
+   IMPORTAÇÃO DE TODAS AS PÁGINAS DE ESTILIZAÇÃO
+========================================== */
+
+@import url('./contato.css');
+@import url('./dashboard.css');
+@import url('./faq.css');
+@import url('./integrantes.css');
+@import url('./monitoramento.css');
+@import url('./sobre.css');

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="pt-br">
+ <!-- Integração do chatbot IBM Watson Assistant -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "79fb87eb-c816-4fd3-aa18-846c47cedc20",
+            region: "https://integrations.us-south.assistant.watson.appdomain.cloud",
+            serviceInstanceID: "0177986c-b5c0-4d7f-a7f8-b4a819fe3eaa",
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+    <!-- Script responsável pelas funcionalidades interativas da página -->
+    <script src="../js/script.js"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OrbitSafe - FAQ</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/faq.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal contendo a logo e o menu de navegação -->
+    <header class="cabecalho">
+
+        <nav class="cabecalho__navbar">
+
+            <a href="../index.html" class="cabecalho__logo">
+                <img src="../assets/logo.png" alt="Logo OrbitSafe">
+            </a>
+
+            <button id="menu-toggle" class="cabecalho__hamburger">
+                ☰
+            </button>
+
+            <ul class="cabecalho__lista" id="nav-menu">
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./sobre.html">
+                        Sobre
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./monitoramento.html">
+                        Monitoramento
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link cabecalho__link--active" href="./faq.html">
+                        FAQ
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./contato.html">
+                        Contato
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./integrantes.html">
+                        Integrantes
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal da página de perguntas frequentes -->
+    <main class="faq">
+
+        <!-- Seção de apresentação do FAQ -->
+        <section class="faq__titulo">
+
+            <h1>
+
+                Perguntas Frequentes
+
+            </h1>
+
+            <p>
+
+                Tire suas dúvidas sobre a plataforma OrbitSafe.
+
+            </p>
+
+        </section>
+
+        <!-- Container que reúne as perguntas e respostas mais comuns -->
+        <div class="faq__container">
+
+            <!-- Pergunta sobre redundância de comunicação -->
+            <section class="faq__card">
+
+                <h2>
+
+                    O que acontece se as antenas forem danificadas?
+
+                </h2>
+
+                <p>
+
+                    Caso uma antena fique indisponível, o OrbitSafe utiliza a comunicação via satélite para manter o envio de informações. Quando ocorre uma falha na comunicação, o sistema prioriza rotas alternativas disponíveis para manter a transmissão dos dados, reduzindo o impacto da interrupção. Assim, o monitoramento continua funcionando mesmo em situações de emergência.
+
+                </p>
+
+            </section>
+
+            <!-- Pergunta sobre funcionamento do chatbot em áreas sem internet -->
+            <section class="faq__card">
+
+                <h2>
+
+                    Como o chatbot funciona sem internet?
+
+                </h2>
+
+                <p>
+
+                    Mesmo sem acesso a uma rede de internet, os dados são transmitidos através dos satélites de órbita baixa, que permitem que essa comunicação possa ser mantida por redes via satélite ou outras infraestruturas de emergência.
+
+                </p>
+
+            </section>
+
+            <!-- Pergunta sobre o tempo de detecção de falhas -->
+            <section class="faq__card">
+
+                <h2>
+
+                    Quanto tempo leva para detectar uma queda de rede?
+
+                </h2>
+
+                <p>
+
+                    A detecção é praticamente imediata. O sistema monitora constantemente a comunicação e identifica interrupções em poucos segundos, permitindo uma resposta rápida de aproximadamente 30 segundos.
+
+                </p>
+
+            </section>
+
+            <!-- Pergunta sobre permissões de acesso ao dashboard -->
+            <section class="faq__card">
+
+                <h2>
+
+                    Quem pode acessar o Dashboard?
+
+                </h2>
+
+                <p>
+
+                    O Dashboard é destinado a órgãos responsáveis pelo monitoramento, como equipes de emergência, Defesa Civil e administradores autorizados, garantindo acesso seguro às informações.
+
+                </p>
+
+            </section>
+
+            <!-- Pergunta sobre os satélites utilizados pela solução -->
+            <section class="faq__card">
+
+                <h2>
+
+                    Quais satélites são utilizados?
+
+                </h2>
+
+                <p>
+
+                    O OrbitSafe é um projeto idealizado para ser compatível com redes de comunicação via satélite utilizadas em monitoramento e resposta a desastres, como os Satélites de órbita terrestre baixa (LEO).
+
+                </p>
+
+            </section>
+
+            <!-- Pergunta sobre integração com órgãos de emergência -->
+            <section class="faq__card">
+
+                <h2>
+
+                    É possível integrar com a Defesa Civil?
+
+                </h2>
+
+                <p>
+
+                    Sim. O sistema foi projetado para facilitar a integração com órgãos públicos, permitindo o compartilhamento de alertas e informações que auxiliem nas operações de resposta e resgate.
+
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Rodapé com informações institucionais do projeto -->
+    <footer class="rodape">
+        <p>© 2026 OrbitSafe - Global Solution - FIAP</p>
+    </footer>
+
+    <!-- Botão de acesso rápido para envio de alertas SOS -->
+    <button class="sos-btn" id="abrirSOS">
+        🚨
+    </button>
+
+    <!-- Modal utilizado para registrar solicitações de emergência -->
+    <div class="sos-modal" id="modalSOS">
+
+        <div class="sos-conteudo">
+
+            <h3>🚨 Emergência</h3>
+
+            <input type="text" id="sos-nome" placeholder="Nome">
+
+            <input type="text" id="sos-localizacao" placeholder="Localização">
+
+            <textarea id="sos-mensagem" placeholder="Descreva a situação"></textarea>
+
+            <button class="sos-enviar" id="enviarSOS">
+                Transmitir
+            </button>
+
+            <button class="sos-fechar" id="fecharSOS">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+   
+
+</body>
+
+</html>

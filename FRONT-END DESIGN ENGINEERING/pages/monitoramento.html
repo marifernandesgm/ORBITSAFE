@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="pt-br">
+  <!-- Integração do chatbot IBM Watson Assistant -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "79fb87eb-c816-4fd3-aa18-846c47cedc20",
+            region: "https://integrations.us-south.assistant.watson.appdomain.cloud",
+            serviceInstanceID: "0177986c-b5c0-4d7f-a7f8-b4a819fe3eaa",
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+    <!-- Script responsável pelas funcionalidades interativas da página -->
+    <script src="../js/script.js"></script>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OrbitSafe - Monitoramento</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/monitoramento.css">
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal contendo a logo e o menu de navegação -->
+    <header class="cabecalho">
+
+        <nav class="cabecalho__navbar">
+
+            <a href="../index.html" class="cabecalho__logo">
+                <img src="../assets/logo.png" alt="Logo OrbitSafe">
+            </a>
+
+            <button id="menu-toggle" class="cabecalho__hamburger">
+                ☰
+            </button>
+
+            <ul class="cabecalho__lista" id="nav-menu">
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./sobre.html">
+                        Sobre
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link cabecalho__link--active" href="./monitoramento.html">
+                        Monitoramento
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./faq.html">
+                        FAQ
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./contato.html">
+                        Contato
+                    </a>
+                </li>
+
+                <li class="cabecalho__item">
+                    <a class="cabecalho__link" href="./integrantes.html">
+                        Integrantes
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal da central de monitoramento -->
+    <main class="container-monitoramento">
+
+        <!-- Seção de apresentação da central de monitoramento -->
+        <section class="titulo-central">
+
+            <h1>
+
+                Central de Monitoramento Espacial
+
+            </h1>
+
+            <p>
+
+                Acompanhamento em tempo real da cobertura da constelação OrbitSafe e das ocorrências prioritárias.
+
+            </p>
+
+        </section>
+
+        <!-- Cards com os principais indicadores operacionais do sistema -->
+        <div class="cards-indicadores">
+
+            <!-- Indicador da quantidade de satélites em operação -->
+            <section class="card">
+
+                <h3>Satélites em Órbita</h3>
+
+                <p class="numero">
+
+                    24 / 24
+
+                </p>
+
+                <p class="status">
+
+                    100% Operacional
+
+                </p>
+
+            </section>
+
+            <!-- Indicador das conexões ativas da plataforma -->
+            <section class="card">
+
+                <h3>Conexões Ativas</h3>
+
+                <p class="numero">
+
+                    1.420
+
+                </p>
+
+                <p class="status">
+
+                    Pontos isolados atendidos
+
+                </p>
+
+            </section>
+
+            <!-- Indicador da taxa de resposta aos chamados -->
+            <section class="card">
+
+                <h3>Chamados Respondidos</h3>
+
+                <p class="numero">
+
+                    98,4%
+
+                </p>
+
+                <p class="status">
+
+                    Tempo médio: 45 segundos
+
+                </p>
+
+            </section>
+
+        </div>
+
+        <!-- Painel principal contendo radar e alertas ativos -->
+        <div class="painel-grade">
+
+            <!-- Área de visualização da constelação de satélites -->
+            <section class="bloco-mapa">
+
+                <h2>
+
+                    Visualização da Constelação
+
+                </h2>
+
+                <div class="mapa-ficticio">
+
+                    <!-- Elementos visuais que simulam um radar de monitoramento -->
+                    <div class="radar-container">
+
+                        <div class="radar-ring"></div>
+
+                        <div class="radar-ring"></div>
+
+                        <div class="radar-ring"></div>
+
+                        <div class="radar-axis-h"></div>
+
+                        <div class="radar-axis-v"></div>
+
+                        <div class="radar-sweep"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Área responsável por exibir alertas e ocorrências monitoradas -->
+            <section class="bloco-ocorrencias">
+
+                <h2>
+
+                    Alertas Ativos
+
+                </h2>
+
+                <ul class="lista-alertas">
+
+                    <li class="alerta critico">
+
+                        Região Sudeste - Volume elevado de chuvas.
+
+                    </li>
+
+                    <li class="alerta moderado">
+
+                        Região Norte - Tempestades isoladas.
+
+                    </li>
+
+                    <li class="alerta informativo">
+
+                        Vale do Paraíba - Monitoramento preventivo.
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </div>
+
+        <!-- Painel de Status Orbital dos Satélites -->
+        <section class="painel-status-orbital">
+            <h2>Status Orbital em Tempo Real</h2>
+            <div class="orbita-grid">
+                <div class="satelite-status">
+                    <div class="satelite-icone">🛰️</div>
+                    <h3>OrbitSafe-03</h3>
+                    <p class="orbita-info">Altitude: 550 km</p>
+                    <p class="orbita-info">Velocidade: 7.66 km/s</p>
+                    <span class="badge-orbital online">● Online</span>
+                </div>
+                <div class="satelite-status">
+                    <div class="satelite-icone">🛰️</div>
+                    <h3>OrbitSafe-07</h3>
+                    <p class="orbita-info">Altitude: 540 km</p>
+                    <p class="orbita-info">Velocidade: 7.67 km/s</p>
+                    <span class="badge-orbital online">● Online</span>
+                </div>
+                <div class="satelite-status">
+                    <div class="satelite-icone">🛰️</div>
+                    <h3>OrbitSafe-12</h3>
+                    <p class="orbita-info">Altitude: 560 km</p>
+                    <p class="orbita-info">Velocidade: 7.65 km/s</p>
+                    <span class="badge-orbital manutencao">● Manutenção</span>
+                </div>
+                <div class="satelite-status">
+                    <div class="satelite-icone">🛰️</div>
+                    <h3>OrbitSafe-18</h3>
+                    <p class="orbita-info">Altitude: 555 km</p>
+                    <p class="orbita-info">Velocidade: 7.66 km/s</p>
+                    <span class="badge-orbital online">● Online</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Painel de Telemetria -->
+        <section class="painel-telemetria">
+            <h2>Telemetria da Rede</h2>
+            <div class="telemetria-grid">
+                <div class="telemetria-item">
+                    <span class="telemetria-icone">📶</span>
+                    <h4>Sinal Uplink</h4>
+                    <div class="barra-progresso"><div class="barra-preenchida" style="width:92%"></div></div>
+                    <p>92% de intensidade</p>
+                </div>
+                <div class="telemetria-item">
+                    <span class="telemetria-icone">📡</span>
+                    <h4>Sinal Downlink</h4>
+                    <div class="barra-progresso"><div class="barra-preenchida" style="width:87%"></div></div>
+                    <p>87% de intensidade</p>
+                </div>
+                <div class="telemetria-item">
+                    <span class="telemetria-icone">🔋</span>
+                    <h4>Energia Solar</h4>
+                    <div class="barra-progresso"><div class="barra-preenchida" style="width:95%"></div></div>
+                    <p>95% de carga</p>
+                </div>
+                <div class="telemetria-item">
+                    <span class="telemetria-icone">🌡️</span>
+                    <h4>Temperatura</h4>
+                    <div class="barra-progresso"><div class="barra-preenchida barra-temp" style="width:68%"></div></div>
+                    <p>22°C (Nominal)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Painel de Cobertura Global -->
+        <section class="painel-cobertura-global">
+            <h2>Cobertura Global da Constelação</h2>
+            <div class="cobertura-container">
+                <div class="cobertura-item">
+                    <div class="cobertura-circulo">
+                        <svg viewBox="0 0 120 120" class="cobertura-svg">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#1e293b" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#00cfff" stroke-width="8" stroke-dasharray="310" stroke-dashoffset="31" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                        </svg>
+                        <span class="cobertura-valor">90%</span>
+                    </div>
+                    <p>América do Sul</p>
+                </div>
+                <div class="cobertura-item">
+                    <div class="cobertura-circulo">
+                        <svg viewBox="0 0 120 120" class="cobertura-svg">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#1e293b" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#38bdf8" stroke-width="8" stroke-dasharray="310" stroke-dashoffset="62" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                        </svg>
+                        <span class="cobertura-valor">80%</span>
+                    </div>
+                    <p>África</p>
+                </div>
+                <div class="cobertura-item">
+                    <div class="cobertura-circulo">
+                        <svg viewBox="0 0 120 120" class="cobertura-svg">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#1e293b" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#22d3ee" stroke-width="8" stroke-dasharray="310" stroke-dashoffset="47" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                        </svg>
+                        <span class="cobertura-valor">85%</span>
+                    </div>
+                    <p>Ásia-Pacífico</p>
+                </div>
+                <div class="cobertura-item">
+                    <div class="cobertura-circulo">
+                        <svg viewBox="0 0 120 120" class="cobertura-svg">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#1e293b" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#06b6d4" stroke-width="8" stroke-dasharray="310" stroke-dashoffset="16" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                        </svg>
+                        <span class="cobertura-valor">95%</span>
+                    </div>
+                    <p>Europa</p>
+                </div>
+            </div>
+        </section>
+
+<p class="texto-satelite">Monitore em tempo real a posição e o status dos satélites da constelação.</p>
+    </main>
+
+    <!-- Rodapé com informações institucionais do projeto -->
+    <footer class="rodape">
+        <p>© 2026 OrbitSafe - Global Solution - FIAP</p>
+    </footer>
+
+    <!-- Botão de acesso rápido para envio de alertas SOS -->
+    <button class="sos-btn" id="abrirSOS">
+        🚨 
+    </button>
+
+    <!-- Modal utilizado para registrar solicitações de emergência -->
+    <div class="sos-modal" id="modalSOS">
+
+        <div class="sos-conteudo">
+
+            <h3>🚨 Emergência</h3>
+
+            <input type="text" id="sos-nome" placeholder="Nome">
+
+            <input type="text" id="sos-localizacao" placeholder="Localização">
+
+            <textarea id="sos-mensagem" placeholder="Descreva a situação"></textarea>
+
+            <button class="sos-enviar" id="enviarSOS">
+                Transmitir
+            </button>
+
+            <button class="sos-fechar" id="fecharSOS">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
