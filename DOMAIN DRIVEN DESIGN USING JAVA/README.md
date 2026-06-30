@@ -1,8 +1,8 @@
 # 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
 > Global Solution — Turma 1TDSPH (2026)  
-> Disciplina: Domain Driven Design Using Java
-> > Sistema desenvolvido em **Java** para, aplicar conceitos de orientação a objetos, modelagem de domínio e desenvolvimento de interfaces gráficas para simular o gerenciamento de emergências ambientais e monitoramento climático.
+> Disciplina: Domain Driven Design Using Java  
+> Sistema desenvolvido em **Java** para, aplicar conceitos de orientação a objetos, modelagem de domínio e desenvolvimento de interfaces gráficas para simular o gerenciamento de emergências ambientais e monitoramento climático.  
 
 ---
 
@@ -129,7 +129,7 @@ Abaixo encontram-se os detalhes dos desenvolvedores responsáveis pela arquitetu
 
 Para dúvidas, suporte técnico ou informações sobre o ecossistema OrbitSafe, entre em contato com a equipe de desenvolvimento através dos canais abaixo:
 
-* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/isabelleferreiraa/ORBITSAFE-Global-Solution.git)
+* **Dúvidas:** Abra uma [*Issue* diretamente no nosso repositório do GitHub](https://github.com/marifernandesgm/ORBITSAFE.git)
 
 ---
 OrbitSafe 2026 — Fiap Global Solution. Todos os direitos reservados.
