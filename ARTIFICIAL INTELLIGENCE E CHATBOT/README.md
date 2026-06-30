@@ -65,7 +65,8 @@ Para ter acesso completo do nosso bot via webchat, basta entrar no site feito po
 
 # FLUXO CONVERSACIONAL
 
-Usuário → Saudação
+<pre>
+	Usuário → Saudação
           ↓
       Menu Principal
           ↓
@@ -76,3 +77,4 @@ Alertas  Clima   Desastres  Ajuda
      Resposta do Bot
           ↓
        Voltar Menu
+</pre>
