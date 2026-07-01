@@ -94,7 +94,7 @@ Abaixo encontram-se os detalhes dos desenvolvedores responsáveis pela arquitetu
 
 ## 🔗 Repositório Oficial
  
-👉 **GitHub - OrbitSafe Repo(https://github.com/isabelleferreiraa/ORBITSAFE-Global-Solution)**
+👉 **GitHub - OrbitSafe Repo(https://github.com/marifernandesgm/ORBITSAFE)**
 
 ---
 
