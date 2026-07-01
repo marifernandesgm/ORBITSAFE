@@ -48,7 +48,7 @@ Camada estratégica focada em concepção de mercado.
 * **Gestão Ágil:** Planejamento e controle de escopo utilizando Backlog do Produto e Histórias de Usuário (*User Stories*) refinadas.
 * **Avaliação Heurística de IHC:** Mapeamento minucioso das interfaces de protótipo sob o crivo das **10 Heurísticas de Usabilidade de Jakob Nielsen** (tratando visibilidade de status, flexibilidade e prevenção de erros).
 
-### 2. Building Relational Databases
+### 2. Building Relational Database
 
 Módulo focado na modelagem, persistência, integridade e estruturação de dados relacionais corporativos para suportar a infraestrutura de dados da plataforma.
 * **Modelo Conceitual e Relacional:** Criação de diagramas de Entidade e Relacionamento (MER) mapeando fluxos consistentes de usuários e centrais.
@@ -67,7 +67,7 @@ Módulo de backend local e gerenciamento de domínio corporativo utilizando Prog
 * **Modelagem de Domínio (`br.com.fiap.bean`):** Entidades estruturadas representando o negócio: `Cadastro`, `CentralDeControle`, `Emergencia`, `Ocorrencia`, `Satelite` e a interface abstrata `Operador`.
 * **Interface Gráfica (`br.com.fiap.main`):** Camada visual Desktop desenvolvida em Java GUI (`GUIMenuPrincipal`, `GUICadastro`, `GUICentralDeControle`, `GUIOcorrencia`), isolando componentes gráficos das entidades de dados puros.
 
-### 4. Python
+### 4. Computacional Thinking Using Python
 
 Sistema utilitário executado via terminal simulando rotinas matemáticas de análise de riscos, cálculo meteorológico e triagem operacional em script ágil.
 * **Conceitos Aplicados:** Estruturas condicionais avançadas, laços de repetição, coleções dinâmicas (Listas e Dicionários), funções parametrizadas, estrutura `match-case` e tratamento de exceções robusto (`try/except`).
@@ -80,7 +80,7 @@ Camada cognitiva de interface conversacional automatizada com processamento de l
 * **Node-RED:** Orquestrador que implementa funções em JavaScript (`msg.payload`), trata variáveis contextuais de sessão e atua como meio de comunicação.
 * **Integração & Acessibilidade:** Integração activa com a API do **Telegram Bot**, permitindo comandos remotos. Uso combinado dos serviços cognitivos **Speech to Text** (conversão de áudio enviado pelo usuário em texto interpretável) e **Text to Speech** (resposta sintetizada por voz para maior acessibilidade).
 
-### 6. Web Development Front-End
+### 6. Front-end Design Engineering
 
 Plataforma central web de acesso público e institucional, servindo como o painel principal visual do ecossistema OrbitSafe.
 * **Tecnologias:** HTML5 semântico, estilização avançada com CSS3 e interatividade dinâmica via JavaScript Vanilla.
