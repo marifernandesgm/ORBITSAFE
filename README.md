@@ -14,7 +14,7 @@ A proposta surgiu a partir do desafio da Global Solution 2026, cujo objetivo é 
 
 O sistema utiliza uma arquitetura resiliente baseada em satélites de órbita baixa (LEO) para garantir o tráfego de dados e conectividade contínua mesmo quando a infraestrutura terrestre convencional (antenas de telefonia, redes de energia) é severamente comprometida. Desse modo, equipes de resgate, órgãos governamentais e cidadãos conseguem manter canais ativos de comunicação durante situações críticas de isolamento.
 
-Ao unificar engenharia de requisitos, viabilidade mercadológica, modelagem estruturada de banco de dados relacionais, interfaces web responsivas, interfaces gráficas locais, processamento lógico de dados em scripts locais e um chatbot inteligente integrado a canais de mensageria com suporte a voz, o OrbitSafe oferece uma resposta integrada de ponta a ponta focado em prevenção, triagem e mitigação de emergências.
+Ao unificar engenharia de requisitos, viabilidade mercadológica, modelagem estruturada de banco de dados relacionais, interfaces web responsivas, interfaces gráficas locais, processamento lógico de dados em scripts locais e um chatbot inteligente integrado a canais de mensageria com suporte a voz, o OrbitSafe oferece uma resposta integrada de ponta a ponta focado em prevenção, agilidade e triagem de emergências.
 
 ---
 
@@ -24,7 +24,7 @@ Ao unificar engenharia de requisitos, viabilidade mercadológica, modelagem estr
 * **Informar a população:** Oferecer canais interativos e preditivos sobre condições climáticas severas.
 * **Simular alertas de desastres:** Disponibilizar rotinas de classificação de risco em tempo real.
 * **Otimizar o fluxo de socorro:** Facilitar e agilizar o contato entre o cidadão em risco, operadores e centrais de Defesa Civil.
-* **Demonstrar maturidade arquitetural:** Aplicar os conceitos acadêmicos de Engenharia de Software, Modelagem Relacional, Orientação a Objetos, Inteligência Artificial e Desenvolvimento Web de forma acionável e coesa.
+* **Demonstrar maturidade arquitetural:** Aplicar os conceitos acadêmicos de Engenharia de Software, Modelagem Relacional, Orientação a Objetos, Inteligência Artificial e Desenvolvimento Web de forma acionável e ágil.
 
 ---
 
