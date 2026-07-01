@@ -132,8 +132,8 @@ Antes de iniciar, certifique-se de ter o **Node.js** instalado em sua máquina (
 #### Passo 1: Instalação e Inicialização do Node-RED
 1. Abra o seu terminal (Prompt de Comando ou PowerShell no Windows, Terminal no macOS/Linux).
 2. Instale o Node-RED globalmente executando o seguinte comando:
-   ```bash
-   npm install -g --unsafe-perm node-red
+```bash
+npm install -g --unsafe-perm node-red
 
 ```
 
