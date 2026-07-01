@@ -1,7 +1,7 @@
 # 🛰️ OrbitSafe — Sistema de Conectividade Espacial e Emergências Climáticas
 
 > **Global Solution — FIAP (2026)** > **Turma:** 1TDSPH  
-> **Solução integrada transdisciplinar:** Engenharia de Software, Modelagem de Negócios, Building Relational Databases, Java (DDD & GUI), Python, Inteligência Artificial (Watson Assistant & Node-RED) e Desenvolvimento Web Front-End.
+> **Solução integrada transdisciplinar:** Engenharia de Software, Modelagem de Negócios, Building Relational Database, Java (DDD & GUI), Python, Inteligência Artificial (Watson Assistant & Node-RED) e Desenvolvimento Web Front-End.  
 > Projeto focado em conectividade via satélites de órbita baixa  para prevenção, monitoramento e resposta ágil a desastres ambientais.
 
 ---
